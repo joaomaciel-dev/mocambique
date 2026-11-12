@@ -2,15 +2,2177 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moçambique — Sabores da Pérola do Índico</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = { theme: { extend: {
-  colors: { mzg: '#007A3D', mzr: '#D21034', mzy: '#FCD116', mzk: '#111111' },
-  fontFamily: { display: ['"Playfair Display"', 'serif'], body: ['Outfit', 'sans-serif'] }
-} } };
-</script>
+<style id="tw-inline">
+/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-orange-700: oklch(55.3% 0.195 38.402);
+    --color-orange-800: oklch(47% 0.157 37.304);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
+    --color-yellow-100: oklch(97.3% 0.071 103.193);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
+    --color-yellow-600: oklch(68.1% 0.162 75.834);
+    --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-lime-500: oklch(76.8% 0.233 130.85);
+    --color-lime-700: oklch(53.2% 0.157 131.589);
+    --color-green-50: oklch(98.2% 0.018 155.826);
+    --color-green-100: oklch(96.2% 0.044 156.743);
+    --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
+    --color-emerald-700: oklch(50.8% 0.118 165.612);
+    --color-emerald-800: oklch(43.2% 0.095 166.913);
+    --color-teal-800: oklch(43.7% 0.078 188.216);
+    --color-cyan-500: oklch(71.5% 0.143 215.221);
+    --color-cyan-600: oklch(60.9% 0.126 221.723);
+    --color-sky-500: oklch(68.5% 0.169 237.323);
+    --color-sky-600: oklch(58.8% 0.158 241.966);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-indigo-700: oklch(45.7% 0.24 277.023);
+    --color-indigo-800: oklch(39.8% 0.195 277.366);
+    --color-fuchsia-600: oklch(59.1% 0.293 322.896);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
+    --color-pink-700: oklch(52.5% 0.223 3.958);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-neutral-50: oklch(98.5% 0 none);
+    --color-neutral-100: oklch(97% 0 none);
+    --color-neutral-200: oklch(92.2% 0 none);
+    --color-neutral-300: oklch(87% 0 none);
+    --color-neutral-400: oklch(70.8% 0 none);
+    --color-neutral-500: oklch(55.6% 0 none);
+    --color-neutral-600: oklch(43.9% 0 none);
+    --color-neutral-700: oklch(37.1% 0 none);
+    --color-stone-400: oklch(70.9% 0.01 56.259);
+    --color-stone-600: oklch(44.4% 0.011 73.639);
+    --color-stone-700: oklch(37.4% 0.01 67.558);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-sm: 24rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-4xl: 56rem;
+    --container-5xl: 64rem;
+    --container-6xl: 72rem;
+    --container-7xl: 80rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --tracking-wide: 0.025em;
+    --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --blur-sm: 8px;
+    --blur-3xl: 64px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-mzg: #007A3D;
+    --color-mzr: #D21034;
+    --color-mzy: #FCD116;
+    --color-mzk: #111111;
+    --font-display: "Playfair Display",serif;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .inset-0 {
+    inset: 0px;
+  }
+  .inset-x-0 {
+    inset-inline: 0px;
+  }
+  .-top-24 {
+    top: calc(var(--spacing) * -24);
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .top-full {
+    top: 100%;
+  }
+  .-right-24 {
+    right: calc(var(--spacing) * -24);
+  }
+  .right-0 {
+    right: 0px;
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
+  .bottom-0 {
+    bottom: 0px;
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .-left-24 {
+    left: calc(var(--spacing) * -24);
+  }
+  .-left-\[22px\] {
+    left: calc(22px * -1);
+  }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
+  }
+  .isolate {
+    isolation: isolate;
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .z-\[90\] {
+    z-index: 90;
+  }
+  .z-\[95\] {
+    z-index: 95;
+  }
+  .z-\[100\] {
+    z-index: 100;
+  }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mr-1 {
+    margin-right: var(--spacing);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .ml-1 {
+    margin-left: var(--spacing);
+  }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .list-item {
+    display: list-item;
+  }
+  .table {
+    display: table;
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-\[2px\] {
+    height: 2px;
+  }
+  .h-auto {
+    height: auto;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-\[92vh\] {
+    max-height: 92vh;
+  }
+  .min-h-\[2\.5rem\] {
+    min-height: 2.5rem;
+  }
+  .min-h-\[220px\] {
+    min-height: 220px;
+  }
+  .min-h-\[260px\] {
+    min-height: 260px;
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+  .max-w-6xl {
+    max-width: var(--container-6xl);
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+  .max-w-\[380px\] {
+    max-width: 380px;
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .min-w-\[180px\] {
+    min-width: 180px;
+  }
+  .min-w-\[640px\] {
+    min-width: 640px;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .-translate-y-full {
+    --tw-translate-y: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .scroll-mt-20 {
+    scroll-margin-top: calc(var(--spacing) * 20);
+  }
+  .list-decimal {
+    list-style-type: decimal;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
+  .auto-rows-\[64px\] {
+    grid-auto-rows: 64px;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .grid-cols-\[1fr_auto_1fr\] {
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  :where(.space-y-1 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(var(--spacing) * var(--tw-space-y-reverse));
+    margin-block-end: calc(var(--spacing) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-1\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-6 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-8 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  .gap-x-6 {
+    column-gap: calc(var(--spacing) * 6);
+  }
+  .gap-y-1 {
+    row-gap: var(--spacing);
+  }
+  .self-start {
+    align-self: flex-start;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-t-3xl {
+    border-top-left-radius: var(--radius-3xl);
+    border-top-right-radius: var(--radius-3xl);
+  }
+  .rounded-tl-lg {
+    border-top-left-radius: var(--radius-lg);
+  }
+  .rounded-tr-lg {
+    border-top-right-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-4 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 4px;
+  }
+  .border-t-8 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 8px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-b-8 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 8px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-l-8 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 8px;
+  }
+  .border-mzg {
+    border-color: var(--color-mzg);
+  }
+  .border-mzk {
+    border-color: var(--color-mzk);
+  }
+  .border-mzr {
+    border-color: var(--color-mzr);
+  }
+  .border-mzy {
+    border-color: var(--color-mzy);
+  }
+  .border-mzy\/50 {
+    border-color: color-mix(in srgb, #FCD116 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-mzy) 50%, transparent);
+    }
+  }
+  .border-mzy\/60 {
+    border-color: color-mix(in srgb, #FCD116 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-mzy) 60%, transparent);
+    }
+  }
+  .border-neutral-100 {
+    border-color: var(--color-neutral-100);
+  }
+  .border-neutral-200 {
+    border-color: var(--color-neutral-200);
+  }
+  .border-neutral-300 {
+    border-color: var(--color-neutral-300);
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .border-white\/30 {
+    border-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .border-white\/40 {
+    border-color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .bg-\[\#E8F5EC\] {
+    background-color: #E8F5EC;
+  }
+  .bg-\[\#FFF3CF\] {
+    background-color: #FFF3CF;
+  }
+  .bg-\[\#FFFBF0\] {
+    background-color: #FFFBF0;
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/25 {
+    background-color: color-mix(in srgb, #000 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 25%, transparent);
+    }
+  }
+  .bg-black\/30 {
+    background-color: color-mix(in srgb, #000 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
+    }
+  }
+  .bg-black\/70 {
+    background-color: color-mix(in srgb, #000 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+  }
+  .bg-emerald-700 {
+    background-color: var(--color-emerald-700);
+  }
+  .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
+  .bg-mzg {
+    background-color: var(--color-mzg);
+  }
+  .bg-mzg\/20 {
+    background-color: color-mix(in srgb, #007A3D 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-mzg) 20%, transparent);
+    }
+  }
+  .bg-mzg\/30 {
+    background-color: color-mix(in srgb, #007A3D 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-mzg) 30%, transparent);
+    }
+  }
+  .bg-mzk {
+    background-color: var(--color-mzk);
+  }
+  .bg-mzk\/95 {
+    background-color: color-mix(in srgb, #111111 95%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-mzk) 95%, transparent);
+    }
+  }
+  .bg-mzr {
+    background-color: var(--color-mzr);
+  }
+  .bg-mzr\/25 {
+    background-color: color-mix(in srgb, #D21034 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-mzr) 25%, transparent);
+    }
+  }
+  .bg-mzy {
+    background-color: var(--color-mzy);
+  }
+  .bg-mzy\/15 {
+    background-color: color-mix(in srgb, #FCD116 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-mzy) 15%, transparent);
+    }
+  }
+  .bg-mzy\/40 {
+    background-color: color-mix(in srgb, #FCD116 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-mzy) 40%, transparent);
+    }
+  }
+  .bg-neutral-50 {
+    background-color: var(--color-neutral-50);
+  }
+  .bg-neutral-100 {
+    background-color: var(--color-neutral-100);
+  }
+  .bg-neutral-200 {
+    background-color: var(--color-neutral-200);
+  }
+  .bg-orange-600 {
+    background-color: var(--color-orange-600);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-white\/10 {
+    background-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-white\/15 {
+    background-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .bg-yellow-100 {
+    background-color: var(--color-yellow-100);
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
+  .bg-gradient-to-br {
+    --tw-gradient-position: to bottom right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-t {
+    --tw-gradient-position: to top in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-amber-500 {
+    --tw-gradient-from: var(--color-amber-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-amber-600 {
+    --tw-gradient-from: var(--color-amber-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black\/70 {
+    --tw-gradient-from: color-mix(in srgb, #000 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black\/85 {
+    --tw-gradient-from: color-mix(in srgb, #000 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-black) 85%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-500 {
+    --tw-gradient-from: var(--color-cyan-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-600 {
+    --tw-gradient-from: var(--color-cyan-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-emerald-600 {
+    --tw-gradient-from: var(--color-emerald-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-fuchsia-600 {
+    --tw-gradient-from: var(--color-fuchsia-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-lime-500 {
+    --tw-gradient-from: var(--color-lime-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-mzg {
+    --tw-gradient-from: var(--color-mzg);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-mzr {
+    --tw-gradient-from: var(--color-mzr);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-mzy {
+    --tw-gradient-from: var(--color-mzy);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-orange-500 {
+    --tw-gradient-from: var(--color-orange-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-pink-400 {
+    --tw-gradient-from: var(--color-pink-400);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-sky-500 {
+    --tw-gradient-from: var(--color-sky-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-sky-600 {
+    --tw-gradient-from: var(--color-sky-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-stone-400 {
+    --tw-gradient-from: var(--color-stone-400);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-stone-600 {
+    --tw-gradient-from: var(--color-stone-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-yellow-500 {
+    --tw-gradient-from: var(--color-yellow-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-black\/25 {
+    --tw-gradient-via: color-mix(in srgb, #000 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-black) 25%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-black\/30 {
+    --tw-gradient-via: color-mix(in srgb, #000 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-black) 30%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-amber-600 {
+    --tw-gradient-to: var(--color-amber-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-black\/10 {
+    --tw-gradient-to: color-mix(in srgb, #000 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-black) 10%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-blue-700 {
+    --tw-gradient-to: var(--color-blue-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-emerald-800 {
+    --tw-gradient-to: var(--color-emerald-800);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-indigo-700 {
+    --tw-gradient-to: var(--color-indigo-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-indigo-800 {
+    --tw-gradient-to: var(--color-indigo-800);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-lime-700 {
+    --tw-gradient-to: var(--color-lime-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-mzg {
+    --tw-gradient-to: var(--color-mzg);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-mzk {
+    --tw-gradient-to: var(--color-mzk);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-mzr {
+    --tw-gradient-to: var(--color-mzr);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-mzy {
+    --tw-gradient-to: var(--color-mzy);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-orange-600 {
+    --tw-gradient-to: var(--color-orange-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-orange-700 {
+    --tw-gradient-to: var(--color-orange-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-orange-800 {
+    --tw-gradient-to: var(--color-orange-800);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-pink-700 {
+    --tw-gradient-to: var(--color-pink-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-red-900 {
+    --tw-gradient-to: var(--color-red-900);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-stone-700 {
+    --tw-gradient-to: var(--color-stone-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-teal-800 {
+    --tw-gradient-to: var(--color-teal-800);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-transparent {
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .p-0 {
+    padding: 0px;
+  }
+  .p-1 {
+    padding: var(--spacing);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-0 {
+    padding-top: 0px;
+  }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-28 {
+    padding-top: calc(var(--spacing) * 28);
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[\.3em\] {
+    --tw-tracking: .3em;
+    letter-spacing: .3em;
+  }
+  .tracking-\[\.35em\] {
+    --tw-tracking: .35em;
+    letter-spacing: .35em;
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .whitespace-pre-line {
+    white-space: pre-line;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-cyan-600 {
+    color: var(--color-cyan-600);
+  }
+  .text-green-700 {
+    color: var(--color-green-700);
+  }
+  .text-mzg {
+    color: var(--color-mzg);
+  }
+  .text-mzk {
+    color: var(--color-mzk);
+  }
+  .text-mzr {
+    color: var(--color-mzr);
+  }
+  .text-mzy {
+    color: var(--color-mzy);
+  }
+  .text-neutral-400 {
+    color: var(--color-neutral-400);
+  }
+  .text-neutral-500 {
+    color: var(--color-neutral-500);
+  }
+  .text-neutral-600 {
+    color: var(--color-neutral-600);
+  }
+  .text-neutral-700 {
+    color: var(--color-neutral-700);
+  }
+  .text-sky-600 {
+    color: var(--color-sky-600);
+  }
+  .text-stone-700 {
+    color: var(--color-stone-700);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/40 {
+    color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .text-white\/50 {
+    color: color-mix(in srgb, #fff 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 50%, transparent);
+    }
+  }
+  .text-white\/60 {
+    color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
+  .text-white\/70 {
+    color: color-mix(in srgb, #fff 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+  .text-white\/75 {
+    color: color-mix(in srgb, #fff 75%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 75%, transparent);
+    }
+  }
+  .text-white\/80 {
+    color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+  }
+  .text-white\/85 {
+    color: color-mix(in srgb, #fff 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 85%, transparent);
+    }
+  }
+  .text-white\/90 {
+    color: color-mix(in srgb, #fff 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 90%, transparent);
+    }
+  }
+  .text-yellow-600 {
+    color: var(--color-yellow-600);
+  }
+  .text-yellow-700 {
+    color: var(--color-yellow-700);
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .line-through {
+    text-decoration-line: line-through;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .accent-\[\#007A3D\] {
+    accent-color: #007A3D;
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-2 {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-4 {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-mzr {
+    --tw-ring-color: var(--color-mzr);
+  }
+  .ring-mzy {
+    --tw-ring-color: var(--color-mzy);
+  }
+  .blur-3xl {
+    --tw-blur: blur(var(--blur-3xl));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .blur-sm {
+    --tw-blur: blur(var(--blur-sm));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .drop-shadow {
+    --tw-drop-shadow-size: drop-shadow(0 1px 2px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.1))) drop-shadow(0 1px 1px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.06)));
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow( 0 1px 1px rgb(0 0 0 / 0.06));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur {
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
+  }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  @media (hover: hover) {
+    .hover\:-translate-y-1:hover {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:scale-105:hover {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:border-mzg:hover {
+      border-color: var(--color-mzg);
+    }
+    .hover\:border-mzr:hover {
+      border-color: var(--color-mzr);
+    }
+    .hover\:border-mzy:hover {
+      border-color: var(--color-mzy);
+    }
+    .hover\:bg-black\/50:hover {
+      background-color: color-mix(in srgb, #000 50%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-black\/50:hover {
+        background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+      }
+    }
+    .hover\:bg-emerald-700:hover {
+      background-color: var(--color-emerald-700);
+    }
+    .hover\:bg-emerald-800:hover {
+      background-color: var(--color-emerald-800);
+    }
+    .hover\:bg-green-50:hover {
+      background-color: var(--color-green-50);
+    }
+    .hover\:bg-mzr:hover {
+      background-color: var(--color-mzr);
+    }
+    .hover\:bg-mzy:hover {
+      background-color: var(--color-mzy);
+    }
+    .hover\:bg-neutral-200:hover {
+      background-color: var(--color-neutral-200);
+    }
+    .hover\:bg-red-700:hover {
+      background-color: var(--color-red-700);
+    }
+    .hover\:bg-white\/10:hover {
+      background-color: color-mix(in srgb, #fff 10%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/10:hover {
+        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+    .hover\:bg-white\/20:hover {
+      background-color: color-mix(in srgb, #fff 20%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/20:hover {
+        background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+      }
+    }
+    .hover\:bg-white\/25:hover {
+      background-color: color-mix(in srgb, #fff 25%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/25:hover {
+        background-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+      }
+    }
+    .hover\:text-black:hover {
+      color: var(--color-black);
+    }
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+    .hover\:shadow-2xl:hover {
+      --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:brightness-110:hover {
+      --tw-brightness: brightness(110%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+  }
+  .focus\:border-mzg:focus {
+    border-color: var(--color-mzg);
+  }
+  .focus\:border-mzr:focus {
+    border-color: var(--color-mzr);
+  }
+  @media (width >= 40rem) {
+    .sm\:ml-6 {
+      margin-left: calc(var(--spacing) * 6);
+    }
+    .sm\:max-w-2xl {
+      max-width: var(--container-2xl);
+    }
+    .sm\:max-w-xl {
+      max-width: var(--container-xl);
+    }
+    .sm\:auto-rows-\[72px\] {
+      grid-auto-rows: 72px;
+    }
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:items-center {
+      align-items: center;
+    }
+    .sm\:gap-2 {
+      gap: calc(var(--spacing) * 2);
+    }
+    .sm\:gap-3 {
+      gap: calc(var(--spacing) * 3);
+    }
+    .sm\:rounded-3xl {
+      border-radius: var(--radius-3xl);
+    }
+    .sm\:p-6 {
+      padding: calc(var(--spacing) * 6);
+    }
+    .sm\:p-8 {
+      padding: calc(var(--spacing) * 8);
+    }
+    .sm\:pl-10 {
+      padding-left: calc(var(--spacing) * 10);
+    }
+    .sm\:text-3xl {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    .sm\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    .sm\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+    .sm\:text-7xl {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+    .sm\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+    .sm\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+    .lg\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+    .lg\:max-w-\[440px\] {
+      max-width: 440px;
+    }
+    .lg\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:flex-row {
+      flex-direction: row;
+    }
+    .lg\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  @media (width >= 80rem) {
+    .xl\:flex {
+      display: flex;
+    }
+    .xl\:hidden {
+      display: none;
+    }
+    .xl\:grid-cols-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  button:not(:disabled), [role="button"]:not(:disabled), summary, select {
+    cursor: pointer;
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
+}
+
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -46,6 +2208,8 @@ tailwind.config = { theme: { extend: {
   .nav-link.active { background: #D21034; color: #fff; box-shadow: 0 0 0 2px rgba(252,209,22,.45); }
 
   /* Reveal */
+  .grid > * { min-width: 0; }
+  html, body { max-width: 100%; overflow-x: hidden; }
   .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
   .reveal.in { opacity: 1; transform: none; }
 
@@ -127,6 +2291,65 @@ tailwind.config = { theme: { extend: {
   #flagSvg [data-el] { transition: opacity .3s; }
   #flagSvg.focus [data-el]:not(.on) { opacity: .2; }
   .cola:empty { display: none; }
+  /* ===== Modo escuro ===== */
+  html.dark { color-scheme: dark; }
+  .dark body { background: #0d0d0d; color: #ececec; }
+  .dark .bg-white { background-color: #1b1b1b; }
+  .dark .bg-\[\#FFFBF0\] { background-color: #101010; }
+  .dark .bg-\[\#FFF3CF\] { background-color: #17140a; }
+  .dark .bg-\[\#E8F5EC\] { background-color: #0c170f; }
+  .dark .bg-neutral-50 { background-color: #232323; }
+  .dark .bg-neutral-100 { background-color: #2a2a2a; }
+  .dark .hover\:bg-neutral-200:hover { background-color: #383838; }
+  .dark .text-neutral-400, .dark .text-neutral-500, .dark .text-neutral-600, .dark .text-neutral-700 { color: #b8b8b8; }
+  .dark .border-neutral-100, .dark .border-neutral-200, .dark .border-neutral-300 { border-color: #363636; }
+  .dark .text-mzk { color: #ececec; }
+  .dark input, .dark select, .dark textarea { background: #232323; color: #f0f0f0; }
+  .dark .quiz-opt:hover, .dark .hq-opt:hover { background: #10301d; }
+  .dark .game-tab { background: #1b1b1b; color: #eee; border-color: #363636; }
+
+  /* ===== Instrumentos ===== */
+  .tkey { width: 9%; max-width: 54px; min-width: 24px; border-radius: .5rem .5rem .75rem .75rem; background: linear-gradient(#e0a458, #b36b1f); border: 2px solid #7a430f; color: #3b1d05; font-weight: 700; display: flex; align-items: flex-end; justify-content: center; padding-bottom: .5rem; cursor: pointer; user-select: none; touch-action: manipulation; transition: transform .08s, filter .08s; }
+  .tkey:hover { filter: brightness(1.1); }
+  .tkey.hit, .pad.hit { transform: scale(.94) translateY(3px); filter: brightness(1.35); }
+  .pad { border-radius: 1rem; min-height: 86px; font-weight: 700; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .25rem; cursor: pointer; user-select: none; touch-action: manipulation; transition: transform .08s, filter .08s; border: 3px solid rgba(255,255,255,.25); }
+  .str { position: relative; width: 100%; height: 38px; text-align: left; padding-left: .75rem; font-size: .8rem; color: rgba(255,255,255,.7); cursor: pointer; border-radius: .5rem; background: rgba(255,255,255,.04); touch-action: manipulation; }
+  .str::after { content: ""; position: absolute; left: 3.5rem; right: .5rem; top: 50%; height: 2px; background: linear-gradient(90deg, #FCD116, #e6b800); transform-origin: center; }
+  .str.hit::after { animation: vib .5s ease-out; }
+  @keyframes vib { 0% { transform: scaleY(7); } 25% { transform: scaleY(-5); } 50% { transform: scaleY(3); } 75% { transform: scaleY(-2); } 100% { transform: scaleY(1); } }
+  .seq-step { width: 100%; height: 30px; border-radius: .35rem; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); transition: background .08s; }
+  .seq-step.on { background: #FCD116; border-color: #fff; }
+  .seq-step.cur { outline: 2px solid #D21034; outline-offset: 1px; }
+  .seq-step.beat { border-left-width: 3px; }
+
+  /* ===== Jogos ===== */
+  .game-tab { background: #fff; border-color: #e5e5e5; transition: all .2s; }
+  .game-tab.active { background: #D21034; color: #fff; border-color: #D21034; }
+  .mem-card { aspect-ratio: 1 / 1; perspective: 800px; padding: 0; background: none; border: 0; cursor: pointer; touch-action: manipulation; }
+  .mem-inner { position: relative; display: block; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .45s; }
+  .mem-card.open .mem-inner, .mem-card.done .mem-inner { transform: rotateY(180deg); }
+  .mem-back, .mem-front { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: .9rem; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .mem-back { background: linear-gradient(135deg, #007A3D, #0a5a30); border: 3px solid #FCD116; font-size: 1.8rem; }
+  .mem-front { transform: rotateY(180deg); background: #fff; color: #111; font-weight: 700; font-size: .8rem; padding: .25rem; border: 3px solid #e5e5e5; }
+  .mem-card.done .mem-front { border-color: #007A3D; }
+  .mem-front img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .swatch { width: 44px; height: 44px; border-radius: 999px; border: 3px solid #d4d4d4; cursor: pointer; transition: transform .15s; }
+  .swatch.sel { border-color: #111; transform: scale(1.18); box-shadow: 0 0 0 3px #FCD116; }
+  .opt-btn { text-align: left; border: 2px solid #e5e5e5; border-radius: 1rem; padding: .85rem 1.1rem; font-weight: 500; transition: all .15s; width: 100%; }
+  .opt-btn:hover:not(:disabled) { border-color: #007A3D; background: rgba(0,122,61,.08); }
+  .opt-btn.ok { background: #007A3D; color: #fff; border-color: #007A3D; }
+  .opt-btn.bad { background: #D21034; color: #fff; border-color: #D21034; }
+  .dark .opt-btn { border-color: #363636; }
+  .dark .swatch { border-color: #555; }
+  .dark .swatch.sel { border-color: #fff; }
+
+  /* ===== Extras ===== */
+  #moreMenu a { display: block; }
+  #cartModal { transition: opacity .25s; }
+  #cartModal.hidden-modal { opacity: 0; pointer-events: none; }
+  #cartModal .sheet { transition: transform .3s; }
+  #cartModal.hidden-modal .sheet { transform: translateY(30px) scale(.97); }
+  .done-line { text-decoration: line-through; opacity: .55; }
   .has-photo .ph-icon { opacity: 0; }
   .has-photo .cult-shade { opacity: 1 !important; }
   .face.has-photo { justify-content: flex-end !important; padding-bottom: 1.25rem; }
@@ -202,12 +2425,12 @@ tailwind.config = { theme: { extend: {
 
 <!-- ================= NAVBAR ================= -->
 <header id="nav" class="fixed top-0 inset-x-0 z-50 bg-mzk/95 backdrop-blur border-b-2 border-mzy -translate-y-full transition-transform duration-700">
-  <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-    <a href="#inicio" class="flex items-center gap-2 text-white font-display font-bold text-lg">
+  <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-2">
+    <a href="#inicio" class="flex items-center gap-2 text-white font-display font-bold text-lg shrink-0">
       <span class="w-6 h-4 rounded-sm overflow-hidden flex flex-col"><span class="flex-1 bg-mzg"></span><span class="flex-1 bg-black"></span><span class="flex-1 bg-mzy"></span></span>
       Moçambique
     </a>
-    <nav class="hidden lg:flex items-center gap-1" id="navLinks">
+    <nav class="hidden xl:flex items-center gap-0.5" id="navLinks">
       <a class="nav-link" href="#culinaria">Culinária</a>
       <a class="nav-link" href="#quiz">Quiz</a>
       <a class="nav-link" href="#ferramentas">Ferramentas</a>
@@ -216,10 +2439,30 @@ tailwind.config = { theme: { extend: {
       <a class="nav-link" href="#turismo">Turismo</a>
       <a class="nav-link" href="#cultura">Cultura</a>
       <a class="nav-link" href="#politica">Política</a>
+      <div class="relative">
+        <button id="moreBtn" class="nav-link" aria-haspopup="true" aria-expanded="false">Mais ▾</button>
+        <div id="moreMenu" class="hidden absolute right-0 top-full mt-2 w-48 bg-mzk border border-mzy/50 rounded-xl p-1 shadow-2xl">
+          <a class="nav-link" href="#sons">Sons</a>
+          <a class="nav-link" href="#jogos">Jogos</a>
+          <a class="nav-link" href="#desafio">Desafio</a>
+          <a class="nav-link" href="#brasil">Brasil</a>
+          <a class="nav-link" href="#glossario">Glossário</a>
+          <a class="nav-link" href="#datas">Datas</a>
+          <a class="nav-link" href="#linha">Linha do tempo</a>
+          <a class="nav-link" href="#idioma">Idioma</a>
+          <a class="nav-link" href="#cardapio">Cardápio</a>
+          <a class="nav-link" href="#personagens">Personagens</a>
+          <a class="nav-link" href="#natureza">Natureza</a>
+          <a class="nav-link" href="#fontes">Fontes</a>
+        </div>
+      </div>
     </nav>
-    <button id="burger" class="lg:hidden text-white text-xl w-10 h-10" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <div class="flex items-center gap-1">
+      <button id="themeBtn" class="w-10 h-10 rounded-full text-white text-lg hover:bg-white/10" aria-label="Ativar modo escuro">🌙</button>
+      <button id="burger" class="xl:hidden text-white text-xl w-10 h-10" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
   </div>
-  <nav id="mobileNav" class="hidden lg:hidden px-4 pb-3 grid grid-cols-2 gap-1">
+  <nav id="mobileNav" class="hidden xl:hidden px-4 pb-3 grid grid-cols-2 gap-1">
     <a class="nav-link" href="#culinaria">Culinária</a>
     <a class="nav-link" href="#quiz">Quiz</a>
     <a class="nav-link" href="#ferramentas">Ferramentas</a>
@@ -228,6 +2471,18 @@ tailwind.config = { theme: { extend: {
     <a class="nav-link" href="#turismo">Turismo</a>
     <a class="nav-link" href="#cultura">Cultura</a>
     <a class="nav-link" href="#politica">Política</a>
+    <a class="nav-link" href="#sons">Sons</a>
+    <a class="nav-link" href="#jogos">Jogos</a>
+    <a class="nav-link" href="#desafio">Desafio</a>
+    <a class="nav-link" href="#brasil">Brasil</a>
+    <a class="nav-link" href="#glossario">Glossário</a>
+    <a class="nav-link" href="#datas">Datas</a>
+    <a class="nav-link" href="#linha">Linha do tempo</a>
+    <a class="nav-link" href="#idioma">Idioma</a>
+    <a class="nav-link" href="#cardapio">Cardápio</a>
+    <a class="nav-link" href="#personagens">Personagens</a>
+    <a class="nav-link" href="#natureza">Natureza</a>
+    <a class="nav-link" href="#fontes">Fontes</a>
   </nav>
 </header>
 
@@ -372,6 +2627,25 @@ tailwind.config = { theme: { extend: {
   </div>
 </section>
 
+<!-- ================= LINHA DO TEMPO ================= -->
+<section id="linha" class="py-20 bg-[#FFFBF0]">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">04b · LINHA DO TEMPO</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Marcos de <span class="text-mzg">Moçambique</span></h2>
+      <p class="text-neutral-600 mt-2 text-sm">Toque num ano, use as setas ou aperte o play.</p>
+    </div>
+    <div id="tlYears" class="mt-8 flex gap-2 overflow-x-auto pb-3" role="tablist" aria-label="Anos"></div>
+    <div class="h-2 bg-neutral-200 rounded-full overflow-hidden mt-1"><div id="tlBar" class="h-2 bg-mzg rounded-full transition-all" style="width:0%"></div></div>
+    <div id="tlCard" class="mt-6 bg-mzk text-white rounded-3xl p-6 sm:p-8 border-b-8 border-mzy min-h-[220px]"></div>
+    <div class="mt-5 flex flex-wrap justify-center gap-3">
+      <button id="tlPrev" class="border-2 border-neutral-300 px-5 py-2 rounded-full font-semibold hover:border-mzg">← Anterior</button>
+      <button id="tlPlay" class="bg-mzr text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700">▶ Reproduzir</button>
+      <button id="tlNext" class="border-2 border-neutral-300 px-5 py-2 rounded-full font-semibold hover:border-mzg">Próximo →</button>
+    </div>
+  </div>
+</section>
+
 <!-- ================= ECONOMIA ================= -->
 <section id="economia" class="py-20 bg-[#FFFBF0]">
   <div class="max-w-7xl mx-auto px-4">
@@ -451,8 +2725,8 @@ tailwind.config = { theme: { extend: {
           <h4 class="font-display text-2xl font-bold mt-4">Mia Couto</h4>
           <p class="text-mzy text-xs font-semibold tracking-wide">TEMA: RIQUEZA E DESIGUALDADE</p>
           <p class="text-sm text-white/80 mt-3">Para o escritor, o grande drama de um país pobre é que a sua economia muitas vezes não cria riqueza para todos: cria apenas uma pequena elite de ricos. A crítica pede que o desenvolvimento chegue à população, e não só a alguns.</p>
-          “A maior desgraça de uma nação pobre é que, em vez de produzir riqueza, produz ricos.“
-          <blockquote class="cola mt-4 border-l-4 border-mzy pl-4 italic text-white/90 text-sm whitespace-pre-line"><!-- COLE AQUI O TEXTO --></blockquote>
+          "A maior desgraça de uma nação pobre é que, em vez de produzir riqueza, produz ricos."
+          <blockquote class="cola mt-4 border-l-4 border-mzy pl-4 italic text-white/90 text-sm whitespace-pre-line">— Mia Couto (Pensatempos: Textos de Opinião, 2005).</blockquote>
           <!-- ====== COLE AQUI: FONTE DE MIA COUTO (obra e ano) ====== -->
           <p class="cola mt-2 text-mzy text-xs font-semibold"><!-- COLE AQUI A FONTE --></p>
         </article>
@@ -461,9 +2735,9 @@ tailwind.config = { theme: { extend: {
           <h4 class="font-display text-2xl font-bold mt-4">Paulina Chiziane</h4>
           <p class="text-mzy text-xs font-semibold tracking-wide">TEMA: A CONDIÇÃO DA MULHER</p>
           <p class="text-sm text-white/80 mt-3">A autora observa que a vida da mulher é difícil seja qual for o arranjo familiar: num casamento poligâmico, monogâmico ou vivendo só. O seu olhar põe no centro as dores e a força das mulheres moçambicanas, tema que atravessa romances como Niketche.</p>
-         “Com a poligamia, com a monogamia ou mesmo solitária, a vida da mulher é sempre dura."
-          <blockquote class="cola mt-4 border-l-4 border-mzy pl-4 italic text-white/90 text-sm whitespace-pre-line"><!-- COLE AQUI O TEXTO --></blockquote>
-          <!-- ====== COLE AQUI: FONTE DE PAULINA CHIZIANE (obra e ano) ====== -->
+          "Com a poligamia, com a monogamia ou mesmo solitária, a vida da mulher é sempre dura."
+          <blockquote class="cola mt-4 border-l-4 border-mzy pl-4 italic text-white/90 text-sm whitespace-pre-line"— Paulina Chiziane (Balada de Amor ao Vento, 1990).</blockquote>
+          — Paulina Chiziane (Balada de Amor ao Vento, 1990).
           <p class="cola mt-2 text-mzy text-xs font-semibold"><!-- COLE AQUI A FONTE --></p>
         </article>
         <article class="bg-white/5 border border-white/10 rounded-3xl p-6">
@@ -471,31 +2745,36 @@ tailwind.config = { theme: { extend: {
           <h4 class="font-display text-2xl font-bold mt-4">José Craveirinha</h4>
           <p class="text-mzy text-xs font-semibold tracking-wide">POEMA: GRITO NEGRO</p>
           <p class="text-sm text-white/80 mt-3">O poeta compara o trabalhador explorado ao carvão: arrancado da terra, usado como combustível para servir o patrão. A voz do poema recusa esse destino e anuncia que vai arder e queimar a lógica da exploração. É um dos textos mais conhecidos da poesia de denúncia e de afirmação africana.</p>
-         "Eu sou carvão!
-E tu arrancas-me brutalmente do chão
+          "Eu sou carvão!
+E tu arrancas-me
+brutalmente do chão
 e fazes-me tua mina, patrão.
 Eu sou carvão!
 E tu acendes-me, patrão,
-para te servir eternamente como força motriz
+para te servir eternamente
+como força motriz
 mas eternamente não, patrão.
 Eu sou carvão
 e tenho que arder sim;
-queimar tudo com a força da minha combustão.
+queimar tudo com a força da
+minha combustão.
 Eu sou carvão;
 tenho que arder na exploração
-arder até às cinzas da maldição
-arder vivo como alcatrão, meu irmão,
-até não ser mais a tua mina, patrão.
+arder até às cinzas da
+maldição
+arder vivo como alcatrão, meu
+irmão,
+até não ser mais a tua mina,
+patrão.
 Eu sou carvão.
 Tenho que arder
-Queimar tudo com o fogo da minha combustão.
+Queimar tudo com o fogo da
+minha combustão.
 Sim!
 Eu sou o teu carvão, patrão."
-
-
           <blockquote class="cola mt-4 border-l-4 border-mzy pl-4 italic text-white/90 text-sm whitespace-pre-line"><!-- COLE AQUI O TEXTO --></blockquote>
           <!-- ====== COLE AQUI: FONTE DE JOSE CRAVEIRINHA (obra e ano) ====== -->
-          <p class="cola mt-2 text-mzy text-xs font-semibold"><!-- COLE AQUI A FONTE --></p>
+          <p class="cola mt-2 text-mzy text-xs font-semibold">— José Craveirinha (Chigubo, 1964).</p>
         </article>
       </div>
     </div>
@@ -553,6 +2832,355 @@ Eu sou o teu carvão, patrão."
   </div>
 </section>
 
+<!-- ================= SONS ================= -->
+<section id="sons" class="py-20 bg-mzk text-white pattern">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzy font-semibold tracking-widest text-sm">09 · LABORATÓRIO DE SONS</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Toque os <span class="text-mzy">instrumentos</span></h2>
+      <p class="mt-3 text-white/70 max-w-2xl mx-auto">Toque nas teclas, nos tambores e nas cordas, ou use o teclado do computador. Depois monte o seu próprio ritmo de marrabenta.</p>
+      <div class="mt-5 inline-flex items-center gap-3 bg-white/10 rounded-full px-4 py-2">
+        <span aria-hidden="true">🔊</span><label for="vol" class="text-sm">Volume</label>
+        <input id="vol" type="range" min="0" max="1" step="0.05" value="0.7" class="w-40">
+      </div>
+    </div>
+
+    <div class="mt-10 grid lg:grid-cols-2 gap-6">
+      <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-6">
+        <h3 class="text-2xl font-bold">🎶 Timbila Chopi</h3>
+        <p class="text-sm text-white/60 mt-1">Xilofone de madeira do povo chope. Teclado: <b>A S D F G H J K L ;</b></p>
+        <div id="timbilaKeys" class="mt-6 flex items-end justify-center gap-1.5 sm:gap-2 h-56"></div>
+      </div>
+
+      <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-6">
+        <h3 class="text-2xl font-bold">🥁 Ngoma e chocalho</h3>
+        <p class="text-sm text-white/60 mt-1">Três tambores e um chocalho. Teclado: <b>Z X C V</b></p>
+        <div id="drumPads" class="mt-6 grid grid-cols-2 gap-3"></div>
+      </div>
+
+      <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-6">
+        <h3 class="text-2xl font-bold">🎸 Guitarra de marrabenta</h3>
+        <p class="text-sm text-white/60 mt-1">Toque cada corda ou dê um rasgueado.</p>
+        <div id="strings" class="mt-5 space-y-2"></div>
+        <button id="strumBtn" class="mt-4 bg-mzr hover:bg-red-700 px-5 py-2 rounded-full font-semibold transition">Rasgueado</button>
+      </div>
+
+      <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-6">
+        <h3 class="text-2xl font-bold">📖 Sobre os instrumentos</h3>
+        <ul class="mt-3 space-y-3 text-sm text-white/80">
+          <li><b class="text-mzy">Timbila:</b> orquestras de xilofones do povo chope, na região de Zavala. A UNESCO reconheceu a música das timbila como património cultural imaterial. Aqui a escala é simplificada.</li>
+          <li><b class="text-mzy">Ngoma:</b> palavra de origem bantu associada a tambor e a dança, presente em muitas línguas da região.</li>
+          <li><b class="text-mzy">Guitarra:</b> é o coração da marrabenta, ritmo urbano nascido em Maputo, com guitarras de ritmo rápido e dançante.</li>
+        </ul>
+        <p class="mt-4 text-xs text-white/40">Os sons são sintetizados no navegador e são aproximações dos instrumentos reais, não gravações.</p>
+      </div>
+
+      <div class="reveal lg:col-span-2 bg-white/5 border border-white/10 rounded-3xl p-6">
+        <h3 class="text-2xl font-bold">🎛️ Monte o seu ritmo</h3>
+        <p class="text-sm text-white/60 mt-1">Toque nos quadrados para ligar ou desligar cada batida. O exemplo inicial é inspirado no balanço da marrabenta.</p>
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <button id="seqPlay" class="bg-mzg hover:bg-emerald-700 px-5 py-2 rounded-full font-semibold transition">▶ Tocar</button>
+          <label class="flex items-center gap-2 text-sm">Andamento <input id="seqBpm" type="range" min="70" max="150" value="112" class="w-36"> <b id="seqBpmVal">112</b> bpm</label>
+          <button id="seqExample" class="border border-white/30 px-4 py-2 rounded-full text-sm hover:bg-white/10">Exemplo</button>
+          <button id="seqClear" class="border border-white/30 px-4 py-2 rounded-full text-sm hover:bg-white/10">Limpar</button>
+        </div>
+        <div class="mt-5 overflow-x-auto"><div id="seqGrid" class="min-w-[640px] space-y-2"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOGOS ================= -->
+<section id="jogos" class="py-20 bg-[#FFF3CF]">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">10 · JOGOS</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Jogue e <span class="text-mzg">aprenda</span></h2>
+      <p class="mt-3 text-neutral-600">Três jogos rápidos sobre a comida, a bandeira e os sabores de Moçambique.</p>
+    </div>
+    <div id="gameTabs" class="mt-8 flex flex-wrap justify-center gap-2 reveal">
+      <button data-g="mem" class="game-tab px-5 py-2 rounded-full font-semibold border-2">🧠 Jogo da memória</button>
+      <button data-g="flag" class="game-tab px-5 py-2 rounded-full font-semibold border-2">🚩 Monte a bandeira</button>
+      <button data-g="who" class="game-tab px-5 py-2 rounded-full font-semibold border-2">🕵️ Que prato sou eu?</button>
+    </div>
+
+    <div class="mt-6 bg-white rounded-3xl shadow-xl p-5 sm:p-8 reveal">
+      <!-- Memória -->
+      <div id="game-mem">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 class="text-2xl font-bold">Jogo da memória dos pratos</h3>
+            <p class="text-sm text-neutral-500">Combine a foto de cada prato com o nome dele.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <select id="memLevel" class="border-2 border-neutral-200 rounded-xl px-3 py-2 text-sm">
+              <option value="6">Fácil (6 pares)</option><option value="8" selected>Médio (8 pares)</option><option value="10">Difícil (10 pares)</option>
+            </select>
+            <button id="memNew" class="bg-mzr text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-700">Novo jogo</button>
+          </div>
+        </div>
+        <p id="memStats" class="mt-4 text-sm font-semibold"></p>
+        <div id="memGrid" class="mt-3 grid grid-cols-4 gap-2 sm:gap-3"></div>
+        <p id="memInfo" class="mt-4 text-sm text-neutral-600 min-h-[2.5rem]"></p>
+      </div>
+
+      <!-- Bandeira -->
+      <div id="game-flag" class="hidden">
+        <h3 class="text-2xl font-bold">Monte a bandeira de Moçambique</h3>
+        <p class="text-sm text-neutral-500">Escolha uma cor e toque na parte da bandeira onde ela vai. Os símbolos já estão no lugar.</p>
+        <div class="mt-4 grid md:grid-cols-2 gap-6 items-center">
+          <svg id="flagGame" viewBox="0 0 300 200" class="w-full rounded-xl shadow-lg border-4 border-neutral-200" role="img" aria-label="Bandeira para montar">
+            <rect data-r="top" x="0" y="0" width="300" height="62" fill="#cfcfcf" stroke="#888" stroke-dasharray="5 4"/>
+            <rect x="0" y="62" width="300" height="5" fill="#fff"/>
+            <rect data-r="mid" x="0" y="67" width="300" height="66" fill="#cfcfcf" stroke="#888" stroke-dasharray="5 4"/>
+            <rect x="0" y="133" width="300" height="5" fill="#fff"/>
+            <rect data-r="bot" x="0" y="138" width="300" height="62" fill="#cfcfcf" stroke="#888" stroke-dasharray="5 4"/>
+            <polygon data-r="tri" points="0,0 100,100 0,200" fill="#cfcfcf" stroke="#888" stroke-dasharray="5 4"/>
+            <polygon data-r="star" points="38,64 46.5,88.4 72.2,88.9 51.7,104.4 59.2,129.1 38,114.4 16.8,129.1 24.3,104.4 3.8,88.9 29.5,88.4" fill="#cfcfcf" stroke="#888" stroke-dasharray="3 3"/>
+            <g pointer-events="none">
+              <path d="M20 112 L38 117 L56 112 L56 134 L38 139 L20 134 Z" fill="#fff" stroke="#111" stroke-width="1.5"/><line x1="38" y1="117" x2="38" y2="139" stroke="#111" stroke-width="1.5"/>
+              <line x1="58" y1="140" x2="18" y2="88" stroke="#111" stroke-width="3.5" stroke-linecap="round"/><polygon points="8,86 22,80 24,92 12,98" fill="#111"/>
+              <line x1="16" y1="138" x2="62" y2="92" stroke="#111" stroke-width="4.5" stroke-linecap="round"/><polygon points="36,116 44,108 49,113 41,126" fill="#111"/>
+            </g>
+          </svg>
+          <div>
+            <p class="font-semibold text-sm mb-2">1. Escolha a cor</p>
+            <div id="flagPalette" class="flex flex-wrap gap-2"></div>
+            <p class="font-semibold text-sm mt-4 mb-2">2. Toque na parte da bandeira</p>
+            <div class="flex flex-wrap gap-2 mt-3">
+              <button id="flagCheck" class="bg-mzg text-white px-5 py-2 rounded-full font-semibold hover:bg-emerald-800">Verificar</button>
+              <button id="flagReset" class="border-2 border-neutral-300 px-5 py-2 rounded-full font-semibold hover:border-mzr">Recomeçar</button>
+            </div>
+            <ul id="flagResult" class="mt-4 space-y-1 text-sm"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quem sou eu -->
+      <div id="game-who" class="hidden">
+        <h3 class="text-2xl font-bold">Que prato sou eu?</h3>
+        <p class="text-sm text-neutral-500">Adivinhe o prato pelas pistas. Quanto menos pistas usar, mais pontos ganha.</p>
+        <div id="whoBox" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DESAFIO ================= -->
+<section id="desafio" class="py-20 bg-[#E8F5EC]">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">11 · DESAFIO</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Quiz de <span class="text-mzg">história e geografia</span></h2>
+      <p class="mt-3 text-neutral-600">14 perguntas sobre as 5 eras, as províncias e a bandeira. Descubra o quanto você sabe.</p>
+    </div>
+    <div id="histQuizBox" class="mt-8 bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-t-8 border-mzg reveal"></div>
+  </div>
+</section>
+
+<!-- ================= BRASIL ================= -->
+<section id="brasil" class="py-20 bg-mzk text-white pattern">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzy font-semibold tracking-widest text-sm">12 · MOÇAMBIQUE &amp; BRASIL</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Dois países, <span class="text-mzy">uma língua</span></h2>
+      <p class="mt-3 text-white/70 max-w-2xl mx-auto">O Atlântico e o Índico separam os dois países, mas o português, a mandioca e o caju os aproximam.</p>
+    </div>
+
+    <div class="mt-10 grid lg:grid-cols-2 gap-6">
+      <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-6 overflow-x-auto">
+        <h3 class="text-2xl font-bold">Lado a lado</h3>
+        <table class="w-full text-sm mt-4">
+          <thead><tr class="text-left text-mzy"><th class="py-2 pr-2"></th><th class="py-2 pr-2">🇲🇿 Moçambique</th><th class="py-2">🇧🇷 Brasil</th></tr></thead>
+          <tbody id="vsBody"></tbody>
+        </table>
+      </div>
+      <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-6">
+        <h3 class="text-2xl font-bold">Ingredientes que atravessaram o mar</h3>
+        <div id="ingredGrid" class="mt-4 grid sm:grid-cols-2 gap-3"></div>
+      </div>
+    </div>
+
+    <div class="mt-10 reveal">
+      <h3 class="text-3xl font-bold text-center">Pratos <span class="text-mzy">primos</span></h3>
+      <p class="text-center text-white/60 text-sm mt-1">Receitas diferentes, com ideias parecidas. Toque em "Saber mais" para ver os detalhes.</p>
+      <div id="cousinGrid" class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+
+    <div class="mt-10 reveal bg-white/5 border border-white/10 rounded-3xl p-6 grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-2xl font-bold">🌍 A CPLP</h3>
+        <p class="text-sm text-white/75 mt-2">A Comunidade dos Países de Língua Portuguesa foi criada em 1996 e reúne Angola, Brasil, Cabo Verde, Guiné-Bissau, Guiné Equatorial, Moçambique, Portugal, São Tomé e Príncipe e Timor-Leste.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">🕒 Fuso horário</h3>
+        <p class="text-sm text-white/75 mt-2">Maputo está 5 horas à frente de Brasília. Quando é meio-dia em Brasília, são 17h em Maputo.</p>
+        <p id="clockBox" class="mt-3 text-lg font-semibold text-mzy"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GLOSSÁRIO ================= -->
+<section id="glossario" class="py-20 bg-[#FFFBF0]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">13 · GLOSSÁRIO</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Palavras e <span class="text-mzg">frases úteis</span></h2>
+      <p class="mt-3 text-neutral-600">Termos que você vai ouvir em Moçambique, da cozinha à rua.</p>
+    </div>
+    <div class="mt-8 max-w-xl mx-auto reveal">
+      <input id="glosSearch" type="search" placeholder="Buscar palavra ou significado..." class="w-full border-2 border-neutral-200 rounded-full px-5 py-3 focus:border-mzg outline-none">
+    </div>
+    <div id="glosCats" class="flex flex-wrap justify-center gap-2 mt-4"></div>
+    <div id="glosGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+  </div>
+</section>
+
+<!-- ================= DATAS ================= -->
+<section id="datas" class="py-20 bg-[#FFF3CF]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">14 · DATAS &amp; FERIADOS</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">O calendário <span class="text-mzg">de Moçambique</span></h2>
+    </div>
+    <div id="nextHol" class="mt-8 bg-mzk text-white rounded-3xl p-6 text-center border-b-8 border-mzy reveal"></div>
+    <div id="holGrid" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    <p class="mt-6 text-sm text-neutral-600 text-center max-w-3xl mx-auto">Quando um feriado cai num domingo, costuma passar para a segunda-feira seguinte. Algumas fontes também listam a Sexta-feira Santa, de data móvel. Confira o calendário oficial do ano em curso.</p>
+    <p class="mt-3 text-sm text-neutral-600 text-center max-w-3xl mx-auto">Curiosidade: o 7 de setembro é o Dia da Vitória em Moçambique e o Dia da Independência no Brasil. Mesma data, histórias diferentes.</p>
+  </div>
+</section>
+
+<!-- ================= IDIOMA ================= -->
+<section id="idioma" class="py-20 bg-mzk text-white pattern">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzy font-semibold tracking-widest text-sm">15 · IDIOMA</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Frases em <span class="text-mzy">Xitsonga</span></h2>
+      <p class="text-white/75 mt-2 text-sm max-w-2xl mx-auto">O Xichangana, falado no sul de Moçambique, pertence à família do Xitsonga. Grafia e palavras variam de região para região, então use como introdução, não como regra.</p>
+    </div>
+    <div class="mt-8 flex flex-wrap justify-center items-center gap-2">
+      <div id="lgCats" class="flex flex-wrap gap-2 justify-center"></div>
+      <button id="lgStudy" class="bg-mzy text-mzk px-4 py-2 rounded-full text-sm font-semibold hover:brightness-110">👁️ Modo estudo: desligado</button>
+    </div>
+    <div id="lgGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+    <div class="mt-10 bg-white text-mzk rounded-3xl p-6 border-t-8 border-mzr">
+      <h3 class="font-bold text-xl">🧠 Mini-teste</h3>
+      <div id="lgQuiz" class="mt-3"></div>
+    </div>
+    <p class="mt-4 text-xs text-white/60 text-center">Frases baseadas na lista de Xitsonga do Omniglot. Não há áudio: a pronúncia certa se aprende com quem fala a língua.</p>
+  </div>
+</section>
+
+<!-- ================= CARDÁPIO ================= -->
+<section id="cardapio" class="py-20 bg-[#E8F5EC]">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">16 · CARDÁPIO</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Monte o seu <span class="text-mzg">banquete</span></h2>
+    </div>
+    <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
+      <div class="bg-white rounded-3xl p-5 shadow border-t-8 border-mzg">
+        <div id="mnPick" class="space-y-4"></div>
+        <div class="mt-5 flex items-center gap-2"><span class="font-semibold text-sm">Pessoas:</span>
+          <button id="mnDm" class="w-9 h-9 rounded-full border-2 border-neutral-300 font-bold hover:border-mzg" aria-label="Menos uma pessoa">−</button>
+          <span id="mnN" class="w-8 text-center font-black text-xl">4</span>
+          <button id="mnDp" class="w-9 h-9 rounded-full border-2 border-neutral-300 font-bold hover:border-mzg" aria-label="Mais uma pessoa">+</button></div>
+        <button id="mnRand" class="mt-4 bg-mzy text-mzk px-5 py-2 rounded-full font-semibold text-sm hover:brightness-110">🎲 Surpreenda-me</button>
+      </div>
+      <div id="mnCard" class="bg-mzk text-white rounded-3xl p-6 border-b-8 border-mzy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERSONAGENS ================= -->
+<section id="personagens" class="py-20 bg-mzk text-white pattern">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzy font-semibold tracking-widest text-sm">17 · PERSONAGENS</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Quem <span class="text-mzy">sou eu?</span></h2>
+      <p class="text-white/75 mt-2 text-sm">Descubra a personalidade pelas pistas. Quanto menos pistas, mais pontos.</p>
+    </div>
+    <div id="pgBox" class="mt-8 bg-white text-mzk rounded-3xl p-6 sm:p-8 shadow-2xl border-t-8 border-mzr"></div>
+  </div>
+</section>
+
+<!-- ================= NATUREZA ================= -->
+<section id="natureza" class="py-20 bg-[#E8F5EC]">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">18 · NATUREZA</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Animais e <span class="text-mzg">paisagens</span></h2>
+      <p class="text-neutral-600 mt-2 text-sm">Escolha uma área e conheça quem vive lá.</p>
+    </div>
+    <div id="ntTabs" class="mt-8 flex flex-wrap justify-center gap-2"></div>
+    <div id="ntCard" class="mt-6"></div>
+    <div class="mt-10 bg-white rounded-3xl p-6 border border-neutral-200">
+      <h3 class="font-bold text-xl">🔎 Onde encontro...?</h3>
+      <div id="ntAnimals" class="mt-3 flex flex-wrap gap-2"></div>
+      <p id="ntWhere" class="mt-4 text-sm text-neutral-600">Toque num animal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FONTES ================= -->
+<section id="fontes" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center reveal">
+      <p class="text-mzr font-semibold tracking-widest text-sm">15 · FONTES &amp; BIBLIOGRAFIA</p>
+      <h2 class="text-4xl sm:text-5xl font-black mt-2">Onde <span class="text-mzg">conferir</span> as informações</h2>
+    </div>
+    <div class="mt-8 grid md:grid-cols-2 gap-5">
+      <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-200 reveal">
+        <h3 class="font-bold text-lg">📜 História e independência</h3>
+        <ul class="mt-3 space-y-2 text-sm list-disc pl-5">
+          <li>UCA, Dados sobre Moçambique português (1951–1975): Frelimo (1962), luta armada (1964), Mondlane (1969), Acordos de Lusaca (1974), independência (1975). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://uca.edu/politicalscience/dadm-project/sub-saharan-africa-region/portuguese-mozambique-1951-1975">link</a></li>
+          <li>Declaração de Independência de Moçambique, discurso de Samora Machel, 25/06/1975 (CEDIS/Nova Law). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://cedis.novalaw.unl.pt/wp-content/uploads/2021/01/DECLARACAO-DE-INDEPENDENCIA-DE-MOCAMBIQUE-DE-25-DE-JUNHO-DE-1975.pdf">link</a></li>
+          <li>Acordo Geral de Paz para Moçambique (1992), PA-X Peace Agreements Database. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.peaceagreements.org/agreements/392/coding/General%20Peace%20Agreement%20for%20Mozambique">link</a></li>
+        </ul>
+      </div>
+      <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-200 reveal">
+        <h3 class="font-bold text-lg">🏝️ Turismo e natureza</h3>
+        <ul class="mt-3 space-y-2 text-sm list-disc pl-5">
+          <li>UNESCO, Ilha de Moçambique (Património Mundial). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://whc.unesco.org/ES/list/599">link</a></li>
+          <li>ANAC, Parque Nacional do Arquipélago de Bazaruto. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.anac.gov.mz/en/parques/bazaruto/">link</a></li>
+          <li>Al Jazeera, restauração do Parque Nacional da Gorongosa (2024). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.aljazeera.com/features/2024/7/2/ravaged-by-civil-war-how-a-national-park-was-restored-in-mozambique">link</a></li>
+        </ul>
+      </div>
+      <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-200 reveal">
+        <h3 class="font-bold text-lg">🎭 Cultura e literatura</h3>
+        <ul class="mt-3 space-y-2 text-sm list-disc pl-5">
+          <li>UNESCO, Música Timbila dos Chopi (Património Imaterial). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://ich.unesco.org/en/RL/chopi-timbila-00133">link</a></li>
+          <li>Observador, Paulina Chiziane vence o Prémio Camões (2021). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://observador.pt/2021/10/20/escritora-mocambicana-paulina-chiziane-vence-premio-camoes/">link</a></li>
+          <li>Diário de Notícias, Mia Couto vence o Prémio Camões (2013). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.dn.pt/artes/mia-couto-muito-feliz-por-vencer-premio-camoes-3242673.html">link</a></li>
+          <li>Omniglot, frases em Xitsonga (seção Idioma). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.omniglot.com/language/phrases/tsonga.htm">link</a></li>
+          <li>WorldAtlas, significado das cores e símbolos da bandeira. Nota: o site descreve o verde como riqueza natural; outras fontes o ligam à terra e à agricultura. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.worldatlas.com/articles/what-do-the-colors-and-symbols-of-the-flag-of-mozambique-mean.html">link</a></li>
+        </ul>
+      </div>
+      <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-200 reveal">
+        <h3 class="font-bold text-lg">💰 Economia e política</h3>
+        <ul class="mt-3 space-y-2 text-sm list-disc pl-5">
+          <li>Wood Mackenzie, o recomeço do GNL em Moçambique. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.woodmac.com/news/opinion/mozambiques-lng-reset-from-force-majeure-to-major-force/">link</a></li>
+          <li>bne IntelliNews, ExxonMobil levanta a força maior no Rovuma LNG. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://new.intellinews.com/articles/exxonmobil-lifts-force-majeure-on-30bn-rovuma-lng-in-mozambique-as-security-outlook-improves-412770">link</a></li>
+          <li>RTP, posse de Daniel Chapo como Presidente. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.rtp.pt/noticias/mundo/sob-seguranca-apertada-daniel-chapo-assume-presidencia-da-republica-de-mocambique_n1627539">link</a></li>
+          <li>CPLP, Comunidade dos Países de Língua Portuguesa (Direção-Geral de Economia). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://dgeconomia.gov.pt/servicos/comercio-internacional-e-relacoes-internacionais/multilaterais/comunidade-dos-paises-de-lingua-portuguesa.aspx">link</a></li>
+        </ul>
+      </div>
+      <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-200 reveal">
+        <h3 class="font-bold text-lg">🇧🇷 Brasil e feriados</h3>
+        <ul class="mt-3 space-y-2 text-sm list-disc pl-5">
+          <li>IPHAN, patrimônio imaterial (Bahia). <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.gov.br/iphan/pt-br/superintendencias/bahia/patrimonio-imaterial">link</a></li>
+          <li>Feriados de Moçambique em 2026: OfficeHolidays e timeanddate. <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.officeholidays.com/countries/mozambique/2026">link 1</a> · <a class="text-mzg underline" target="_blank" rel="noopener" href="https://www.timeanddate.com/holidays/mozambique/2026">link 2</a></li>
+        </ul>
+      </div>
+      <div class="bg-neutral-50 rounded-2xl p-5 border border-neutral-200 reveal">
+        <h3 class="font-bold text-lg">✍️ Citações dos autores</h3>
+        <p class="mt-3 text-sm">Os textos e as fontes das citações de Mia Couto, Paulina Chiziane e José Craveirinha ficam nos espaços marcados na seção Cultura. Indique sempre a obra e a edição de onde vieram.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="bg-mzk text-white/70 text-center py-10">
   <div class="stripe mb-8"></div>
   <p class="font-display text-2xl text-white">Obrigado / <span class="text-mzy">Kanimambo</span></p>
@@ -565,6 +3193,12 @@ Eu sou o teu carvão, patrão."
   <div class="sheet bg-white w-full sm:max-w-2xl max-h-[92vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl shadow-2xl">
     <div id="modalBody"></div>
   </div>
+</div>
+
+<button id="cartFab" class="hidden fixed bottom-5 left-5 z-40 bg-mzg text-white rounded-full shadow-xl px-5 py-3 font-semibold hover:bg-emerald-800">🛒 Lista <span id="cartCount" class="ml-1 bg-white text-mzg rounded-full px-2 text-sm">0</span></button>
+<button id="toTop" class="hidden fixed bottom-5 right-5 z-40 w-12 h-12 rounded-full bg-mzr text-white text-xl shadow-xl hover:bg-red-700 border-2 border-mzy" aria-label="Voltar ao topo">↑</button>
+<div id="cartModal" class="hidden-modal fixed inset-0 z-[95] bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-6" role="dialog" aria-modal="true">
+  <div class="sheet bg-white w-full sm:max-w-xl max-h-[92vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl shadow-2xl"><div id="cartBody"></div></div>
 </div>
 
 <script>
@@ -692,9 +3326,9 @@ const CULTURE = [
  { icon:"fa-book-open", name:"Mia Couto", sub:"Escritor e biólogo", grad:"from-sky-600 to-indigo-800",
    text:"Nascido na Beira em 1955, é o autor de Terra Sonâmbula e de um português cheio de invenções vindas das línguas moçambicanas. Recebeu o Prémio Camões em 2013. Obras: A Varanda do Frangipani e Um Rio Chamado Tempo, uma Casa Chamada Terra." },
  { icon:"fa-feather-pointed", name:"Paulina Chiziane", sub:"Voz feminina", grad:"from-fuchsia-600 to-mzr",
-   text:"Foi a primeira mulher moçambicana a publicar um romance, Balada de Amor ao Vento (1990). Tornou-se a primeira mulher africana a receber o Prémio Camões, em 2021. Obras: Ventos do Apocalipse e Niketche: Uma História de Poligamia." },
+   text:"Foi a primeira mulher moçambicana a publicar um romance, Balada de Amor ao Vento (1990). Recebeu o Prémio Camões em 2021, a terceira vez que o prémio foi para um autor moçambicano. Obras: Ventos do Apocalipse e Niketche: Uma História de Poligamia." },
  { icon:"fa-pen-nib", name:"José Craveirinha", sub:"Pai da poesia moçambicana", grad:"from-stone-600 to-mzk",
-   text:"Poeta de Xigubo e de uma obra marcada pela afirmação da identidade africana. Foi o primeiro africano a ganhar o Prémio Camões, em 1991. Obras: Karingana ua Karingana e Cela 1." }
+   text:"Poeta de Xigubo e de uma obra marcada pela afirmação da identidade africana. Recebeu o Prémio Camões em 1991, o primeiro prémio desse tipo para um moçambicano. Obras: Karingana ua Karingana e Cela 1." }
 ];
 
 const PROVINCES = [
@@ -842,12 +3476,14 @@ function enter() {
     $('#app').classList.remove('opacity-0');
     $('#nav').classList.remove('-translate-y-full');
     observeReveal();
+    updateFabs();
   }, 900);
 }
 
 /* Volta à tela de seleção quando a página é reaberta (cache do navegador/app) */
 function resetSplash() {
   entered = false;
+  updateFabs();
   closeModal();
   splash.classList.remove('leaving');
   splash.style.display = '';
@@ -873,6 +3509,7 @@ const spy = new IntersectionObserver(entries => {
     if (en.isIntersecting) {
       const id = en.target.id;
       links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+      $('#moreBtn').classList.toggle('active', ['sons','jogos','desafio','brasil','glossario','datas','linha','idioma','cardapio','personagens','natureza','fontes'].includes(id));
     }
   });
 }, { rootMargin: '-45% 0px -50% 0px' });
@@ -932,12 +3569,23 @@ function openModal(id) {
       </div>
     </div>
     <div class="p-6 space-y-6">
-      <div><h4 class="font-bold text-lg mb-2"><i class="fa-solid fa-basket-shopping text-mzr mr-2"></i>Ingredientes</h4>
-        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-1 text-sm">${d.ing.map(i => `<li class="flex gap-2"><i class="fa-solid fa-check text-mzg mt-1 text-xs"></i><span>${i}</span></li>`).join('')}</ul></div>
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+          <h4 class="font-bold text-lg"><i class="fa-solid fa-basket-shopping text-mzr mr-2"></i>Ingredientes</h4>
+          <div class="flex items-center gap-2 text-sm"><span class="text-neutral-500">Para</span>
+            <button id="servMinus" class="w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 font-bold" aria-label="Menos pessoas">−</button>
+            <span id="servNum" class="w-6 text-center font-bold">${d.serves}</span>
+            <button id="servPlus" class="w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 font-bold" aria-label="Mais pessoas">+</button>
+            <span class="text-neutral-500">pessoas</span></div>
+        </div>
+        <ul id="ingList" class="grid sm:grid-cols-2 gap-x-6 gap-y-1 text-sm"></ul>
+        <button id="addCart" class="mt-4 bg-mzg hover:bg-emerald-800 text-white rounded-full px-5 py-2 text-sm font-semibold">🛒 Adicionar à lista de compras</button>
+      </div>
       <div><h4 class="font-bold text-lg mb-2"><i class="fa-solid fa-fire-burner text-mzr mr-2"></i>Modo de preparo</h4>
         <ol class="space-y-2 text-sm">${d.steps.map((s,i) => `<li class="flex gap-3"><span class="shrink-0 w-6 h-6 rounded-full bg-mzr text-white text-xs font-bold flex items-center justify-center">${i+1}</span><span>${s}</span></li>`).join('')}</ol></div>
       <div class="bg-[#FFF3CF] border-l-4 border-mzy rounded-xl p-4"><h4 class="font-bold mb-1"><i class="fa-solid fa-scroll text-yellow-700 mr-2"></i>Contexto histórico</h4><p class="text-sm text-neutral-700">${d.hist}</p></div>
     </div>`;
+  bindModalIng(d);
   hydratePhotos($('#modalBody'));
   modal.classList.remove('hidden-modal');
   document.body.classList.add('locked');
@@ -948,14 +3596,15 @@ modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 /* ============================ QUIZ ============================ */
-let qIndex = 0, scores = {};
+let qIndex = 0, scores = {}, QZ = [];
+function quizShuffle() { QZ = shuffle(QUIZ).map(q => ({ q: q.q, opts: shuffle(q.opts) })); }
 function renderQuiz() {
   const box = $('#quizBox');
-  if (qIndex >= QUIZ.length) return renderResult(box);
-  const q = QUIZ[qIndex];
+  if (qIndex >= QZ.length) return renderResult(box);
+  const q = QZ[qIndex];
   box.innerHTML = `
-    <div class="flex justify-between text-sm text-neutral-500"><span>Pergunta ${qIndex+1} de ${QUIZ.length}</span><span>${Math.round(qIndex/QUIZ.length*100)}%</span></div>
-    <div class="h-2 bg-neutral-100 rounded-full mt-2 overflow-hidden"><div class="h-2 bg-mzr rounded-full transition-all" style="width:${(qIndex+1)/QUIZ.length*100}%"></div></div>
+    <div class="flex justify-between text-sm text-neutral-500"><span>Pergunta ${qIndex+1} de ${QZ.length}</span><span>${Math.round(qIndex/QZ.length*100)}%</span></div>
+    <div class="h-2 bg-neutral-100 rounded-full mt-2 overflow-hidden"><div class="h-2 bg-mzr rounded-full transition-all" style="width:${(qIndex+1)/QZ.length*100}%"></div></div>
     <h3 class="text-2xl sm:text-3xl font-bold mt-6">${q.q}</h3>
     <div class="grid gap-3 mt-6">${q.opts.map((o,i) => `<button data-i="${i}" class="quiz-opt text-left border-2 border-neutral-200 rounded-2xl px-5 py-4 font-medium hover:border-mzg hover:bg-green-50 transition">${o.t}</button>`).join('')}</div>`;
   $$('.quiz-opt', box).forEach(b => b.addEventListener('click', () => {
@@ -982,7 +3631,7 @@ function renderResult(box) {
       <p class="text-sm text-neutral-500 mt-5">Também combina consigo: ${others.map(o => `<button class="underline font-semibold text-mzg other" data-id="${o.id}">${o.name}</button>`).join(' · ')}</p>
     </div>`;
   $('#resRecipe').addEventListener('click', () => openModal(best.id));
-  $('#resRetry').addEventListener('click', () => { qIndex = 0; scores = {}; renderQuiz(); });
+  $('#resRetry').addEventListener('click', () => { qIndex = 0; scores = {}; quizShuffle(); renderQuiz(); });
   $$('.other', box).forEach(b => b.addEventListener('click', () => openModal(b.dataset.id)));
 }
 
@@ -1132,6 +3781,19 @@ $$('.flag-item').forEach(b => b.addEventListener('click', () => selectFlag(b.dat
 $$('#flagSvg [data-el]').forEach(g => { g.style.cursor = 'pointer'; g.addEventListener('click', () => selectFlag(g.dataset.el)); });
 
 /* ============================ PROVÍNCIAS ============================ */
+const PROV_EXTRA = {
+  niassa:    { fact:"É a maior província do país e faz fronteira com a Tanzânia e o Malawi.", dishes:["xima"] },
+  cabo:      { fact:"A escultura makonde em madeira é uma das artes mais conhecidas de Moçambique.", dishes:["camarao"] },
+  tete:      { fact:"A barragem de Cahora Bassa, no rio Zambeze, é uma das maiores de África.", dishes:["xima"] },
+  zambezia:  { fact:"O frango à zambeziana, preparado com piri-piri e leite de coco, leva o nome desta província.", dishes:["frango"] },
+  nampula:   { fact:"É a província com mais habitantes e abre caminho para a Ilha de Moçambique.", dishes:["mucapata"] },
+  manica:    { fact:"No Monte Binga, o ponto mais alto do país, o clima é bem mais fresco que no litoral.", dishes:["xima"] },
+  sofala:    { fact:"A Beira é um dos principais portos do país e fica perto da Gorongosa.", dishes:["caldeirada","matapa"] },
+  gaza:      { fact:"O rio Limpopo atravessa a província e desagua perto de Xai-Xai.", dishes:["camarao"] },
+  inhambane: { fact:"É a terra das timbilas chopi, reconhecidas pela UNESCO.", dishes:["xiguinha"] },
+  mapprov:   { fact:"A ilha de Inhaca, em frente a Maputo, é conhecida pelos recifes e pela pesquisa marinha.", dishes:["camarao"] },
+  maputo:    { fact:"Antes da independência, a cidade se chamava Lourenço Marques. É também o berço da marrabenta.", dishes:["camarao","polana"] }
+};
 const provColors = ['bg-mzg','bg-mzr','bg-yellow-500','bg-emerald-700','bg-orange-600'];
 $('#provMap').innerHTML = PROVINCES.map((p,i) => `
   <button class="prov ${provColors[i % provColors.length]} text-white rounded-xl font-semibold text-xs sm:text-sm px-2 shadow hover:brightness-110 transition" style="grid-area:${p.pos}" data-id="${p.id}">${p.n}</button>`).join('');
@@ -1143,13 +3805,855 @@ function showProv(id) {
     <h3 class="text-3xl font-black mt-1">${p.n}</h3>
     <p class="mt-3 text-white/80"><i class="fa-solid fa-landmark text-mzy w-6"></i><b>Capital:</b> ${p.cap}</p>
     <p class="mt-2 text-white/80"><i class="fa-solid fa-location-dot text-mzy w-6"></i>${p.note}</p>
-    <p class="mt-2 text-white/80"><i class="fa-solid fa-utensils text-mzy w-6"></i><b>Sabor local:</b> ${p.taste}</p>`;
+    <p class="mt-2 text-white/80"><i class="fa-solid fa-utensils text-mzy w-6"></i><b>Sabor local:</b> ${p.taste}</p>
+    ${PROV_EXTRA[id] ? `<p class="mt-2 text-white/80">💡 <b>Curiosidade:</b> ${PROV_EXTRA[id].fact}</p>
+    <div class="mt-4 flex flex-wrap gap-2">${PROV_EXTRA[id].dishes.map(d => `<button class="prov-dish bg-mzy text-mzk px-4 py-2 rounded-full text-sm font-semibold hover:brightness-110" data-d="${d}">Receita: ${dishById(d).name}</button>`).join('')}</div>` : ''}`;
+  $$('.prov-dish', $('#provInfo')).forEach(b => b.addEventListener('click', () => openModal(b.dataset.d)));
 }
 $$('.prov').forEach(b => b.addEventListener('click', () => showProv(b.dataset.id)));
 showProv('maputo');
 
+/* ============================ NOVOS RECURSOS ============================ */
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const MONTHS = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+
+/* ---------- Receita: porções e lista de compras ---------- */
+const fmtQ = v => (Number.isInteger(v) ? String(v) : v.toFixed(1)).replace('.', ',');
+function scaleIng(str, f) {
+  if (Math.abs(f - 1) < 1e-9) return str;
+  const m = str.match(/(\d+(?:[.,]\d+)?)(?:\s*a\s*(\d+(?:[.,]\d+)?))?/);
+  if (!m) return str;
+  const n = x => parseFloat(x.replace(',', '.'));
+  let rest = str.slice(m.index + m[0].length);
+  const um = rest.match(/^\s*(g|ml)\b/);
+  const conv = x => { const v = x * f; return um ? (Math.round(v / 5) * 5 || 5) : Math.max(0.5, Math.round(v * 2) / 2); };
+  let a = conv(n(m[1]));
+  const b = m[2] ? conv(n(m[2])) : null;
+  if (um && b === null && a >= 1000) { a = a / 1000; rest = rest.replace(/^\s*(g|ml)\b/, um[1] === 'g' ? ' kg' : ' l'); }
+  return str.slice(0, m.index) + (b !== null ? fmtQ(a) + ' a ' + fmtQ(b) : fmtQ(a)) + rest;
+}
+let modalServ = 4, modalDishId = null;
+function renderIng() {
+  const d = dishById(modalDishId), f = modalServ / d.serves;
+  $('#servNum').textContent = modalServ;
+  $('#ingList').innerHTML = d.ing.map(i => `<li class="flex gap-2"><i class="fa-solid fa-check text-mzg mt-1 text-xs"></i><span>${scaleIng(i, f)}</span></li>`).join('');
+}
+function bindModalIng(d) {
+  modalDishId = d.id; modalServ = d.serves; renderIng();
+  $('#servMinus').addEventListener('click', () => { modalServ = Math.max(1, modalServ - 1); renderIng(); });
+  $('#servPlus').addEventListener('click', () => { modalServ = Math.min(50, modalServ + 1); renderIng(); });
+  $('#addCart').addEventListener('click', () => { addToCart(d.id, modalServ); closeModal(); openCart(); });
+}
+let CART = [];
+try { CART = (JSON.parse(localStorage.getItem('mz_cart') || '[]') || []).filter(c => c && dishById(c.id)).map(c => ({ id: c.id, serv: Math.min(50, Math.max(1, parseInt(c.serv) || 1)) })); } catch (e) { CART = []; }
+const cartModal = $('#cartModal'), cartFab = $('#cartFab'), toTop = $('#toTop');
+function updateFabs() {
+  toTop.classList.toggle('hidden', !(entered && window.scrollY > 700));
+  cartFab.classList.toggle('hidden', !(entered && CART.length));
+}
+function saveCart() { try { localStorage.setItem('mz_cart', JSON.stringify(CART)); } catch (e) {} $('#cartCount').textContent = CART.length; updateFabs(); }
+function addToCart(id, serv) { const c = CART.find(x => x.id === id); if (c) c.serv = serv; else CART.push({ id, serv }); saveCart(); }
+function cartText() {
+  return 'Lista de compras - culinária de Moçambique\n\n' + CART.map(c => {
+    const d = dishById(c.id), f = c.serv / d.serves;
+    return d.name + ' (' + c.serv + (c.serv === 1 ? ' pessoa' : ' pessoas') + ')\n' + d.ing.map(x => '- ' + scaleIng(x, f)).join('\n');
+  }).join('\n\n');
+}
+function renderCart() {
+  const body = $('#cartBody');
+  const head = `<div class="p-5 flex items-center justify-between border-b border-neutral-200 sticky top-0 bg-white z-10"><h3 class="text-2xl font-bold">🛒 Lista de compras</h3><button data-act="close" class="w-9 h-9 rounded-full bg-neutral-100 hover:bg-neutral-200" aria-label="Fechar">✕</button></div>`;
+  if (!CART.length) { body.innerHTML = head + `<div class="p-8 text-center text-neutral-500">Sua lista está vazia. Abra uma receita e toque em "Adicionar à lista de compras".</div>`; return; }
+  body.innerHTML = head + `<div class="p-5 space-y-4">` + CART.map((c, i) => {
+    const d = dishById(c.id), f = c.serv / d.serves;
+    return `<div class="border border-neutral-200 rounded-2xl p-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <h4 class="font-bold text-lg">${d.name}</h4>
+        <div class="flex items-center gap-2 text-sm">
+          <button data-act="minus" data-i="${i}" class="w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 font-bold" aria-label="Menos pessoas">−</button>
+          <span class="font-bold">${c.serv}</span><span class="text-neutral-500">pessoas</span>
+          <button data-act="plus" data-i="${i}" class="w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 font-bold" aria-label="Mais pessoas">+</button>
+          <button data-act="remove" data-i="${i}" class="ml-1 text-mzr font-semibold hover:underline">Remover</button>
+        </div>
+      </div>
+      <ul class="mt-3 space-y-1 text-sm">${d.ing.map(x => `<li><label class="flex gap-2 items-start cursor-pointer"><input type="checkbox" class="mt-1 accent-[#007A3D]"><span>${scaleIng(x, f)}</span></label></li>`).join('')}</ul>
+    </div>`;
+  }).join('') + `</div><div class="p-5 pt-0 flex flex-wrap gap-3 justify-end">
+    <button data-act="copy" class="bg-mzg text-white px-5 py-2 rounded-full font-semibold hover:bg-emerald-800">📋 Copiar lista</button>
+    <button data-act="clear" class="border-2 border-neutral-300 px-5 py-2 rounded-full font-semibold hover:border-mzr">Limpar tudo</button></div>`;
+}
+function openCart() { renderCart(); cartModal.classList.remove('hidden-modal'); document.body.classList.add('locked'); }
+function closeCart() { cartModal.classList.add('hidden-modal'); if (entered && modal.classList.contains('hidden-modal')) document.body.classList.remove('locked'); }
+async function copyText(t) {
+  try { await navigator.clipboard.writeText(t); return true; } catch (e) {
+    try { const ta = document.createElement('textarea'); ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); const ok = document.execCommand('copy'); ta.remove(); return ok; } catch (e2) { return false; }
+  }
+}
+$('#cartBody').addEventListener('click', async e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  const i = parseInt(b.dataset.i), act = b.dataset.act;
+  if (act === 'close') return closeCart();
+  if (act === 'minus') CART[i].serv = Math.max(1, CART[i].serv - 1);
+  if (act === 'plus') CART[i].serv = Math.min(50, CART[i].serv + 1);
+  if (act === 'remove') CART.splice(i, 1);
+  if (act === 'clear') CART = [];
+  if (act === 'copy') { const ok = await copyText(cartText()); b.textContent = ok ? 'Copiado ✔' : 'Não foi possível copiar'; setTimeout(() => { b.textContent = '📋 Copiar lista'; }, 1800); return; }
+  saveCart(); renderCart();
+});
+$('#cartBody').addEventListener('change', e => { if (e.target.type === 'checkbox') e.target.nextElementSibling.classList.toggle('done-line', e.target.checked); });
+cartModal.addEventListener('click', e => { if (e.target === cartModal) closeCart(); });
+cartFab.addEventListener('click', openCart);
+$('#cartCount').textContent = CART.length;
+
+/* ---------- Modo escuro, topo, menu "Mais", relógio ---------- */
+let isDark = false;
+try { isDark = localStorage.getItem('mz_theme') === 'dark'; } catch (e) {}
+function applyTheme() {
+  document.documentElement.classList.toggle('dark', isDark);
+  $('#themeBtn').textContent = isDark ? '☀️' : '🌙';
+  $('#themeBtn').setAttribute('aria-label', isDark ? 'Ativar modo claro' : 'Ativar modo escuro');
+}
+applyTheme();
+$('#themeBtn').addEventListener('click', () => { isDark = !isDark; applyTheme(); try { localStorage.setItem('mz_theme', isDark ? 'dark' : 'light'); } catch (e) {} });
+window.addEventListener('scroll', updateFabs, { passive: true });
+toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+$('#moreBtn').addEventListener('click', e => { e.stopPropagation(); const m = $('#moreMenu'); m.classList.toggle('hidden'); $('#moreBtn').setAttribute('aria-expanded', String(!m.classList.contains('hidden'))); });
+document.addEventListener('click', e => { if (!e.target.closest('#moreMenu') && e.target.id !== 'moreBtn') $('#moreMenu').classList.add('hidden'); });
+$$('#moreMenu a').forEach(a => a.addEventListener('click', () => $('#moreMenu').classList.add('hidden')));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeCart(); $('#moreMenu').classList.add('hidden'); } });
+function tickClock() {
+  try {
+    const f = tz => new Date().toLocaleTimeString('pt-BR', { timeZone: tz, hour: '2-digit', minute: '2-digit' });
+    $('#clockBox').textContent = 'Agora: Maputo ' + f('Africa/Maputo') + ' · Brasília ' + f('America/Sao_Paulo');
+  } catch (e) { $('#clockBox').textContent = ''; }
+}
+tickClock(); setInterval(tickClock, 30000);
+
+/* ============================ LABORATÓRIO DE SONS ============================ */
+let AC = null, master = null, noiseBuf = null;
+function audio() {
+  if (!AC) {
+    const C = window.AudioContext || window.webkitAudioContext;
+    if (!C) return null;
+    AC = new C();
+    master = AC.createGain(); master.gain.value = parseFloat($('#vol').value);
+    const comp = AC.createDynamicsCompressor();
+    master.connect(comp); comp.connect(AC.destination);
+  }
+  if (AC.state === 'suspended') AC.resume();
+  return AC;
+}
+$('#vol').addEventListener('input', () => { if (master) master.gain.value = parseFloat($('#vol').value); });
+function noiseBurst(t, dur, freq, vol, type, q) {
+  if (!noiseBuf) { noiseBuf = AC.createBuffer(1, AC.sampleRate, AC.sampleRate); const d = noiseBuf.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; }
+  const s = AC.createBufferSource(); s.buffer = noiseBuf;
+  const f = AC.createBiquadFilter(); f.type = type || 'bandpass'; f.frequency.value = freq; f.Q.value = q || 1;
+  const g = AC.createGain(); g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  s.connect(f); f.connect(g); g.connect(master); s.start(t); s.stop(t + dur + 0.05);
+}
+function playTimbila(freq, t) {
+  const ac = audio(); if (!ac) return; const now = t == null ? ac.currentTime : t;
+  [[1, 0.8], [3.9, 0.3], [9.2, 0.1]].forEach(([r, a]) => {
+    const o = ac.createOscillator(), g = ac.createGain();
+    o.type = 'sine'; o.frequency.value = freq * r;
+    g.gain.setValueAtTime(0.0001, now); g.gain.exponentialRampToValueAtTime(a, now + 0.004);
+    g.gain.exponentialRampToValueAtTime(0.0001, now + 1.5 / Math.pow(r, 0.6));
+    o.connect(g); g.connect(master); o.start(now); o.stop(now + 1.6);
+  });
+  noiseBurst(now, 0.14, 2600, 0.12, 'bandpass', 2); // zumbido das cabaças
+}
+function playDrum(kind, t) {
+  const ac = audio(); if (!ac) return; const now = t == null ? ac.currentTime : t;
+  const P = { grave: [120, 50, 0.9, 0.5], medio: [200, 95, 0.8, 0.32], agudo: [330, 190, 0.7, 0.22] }[kind];
+  const o = ac.createOscillator(), g = ac.createGain();
+  o.type = 'sine'; o.frequency.setValueAtTime(P[0], now); o.frequency.exponentialRampToValueAtTime(P[1], now + 0.12);
+  g.gain.setValueAtTime(P[2], now); g.gain.exponentialRampToValueAtTime(0.0001, now + P[3]);
+  o.connect(g); g.connect(master); o.start(now); o.stop(now + P[3] + 0.05);
+  noiseBurst(now, 0.04, 1800, 0.22, 'highpass', 1);
+}
+function playShaker(t) {
+  const ac = audio(); if (!ac) return; const now = t == null ? ac.currentTime : t;
+  noiseBurst(now, 0.09, 7000, 0.2, 'highpass', 1);
+}
+const pluckCache = {};
+function playPluck(freq, t) {
+  const ac = audio(); if (!ac) return; const now = t == null ? ac.currentTime : t;
+  let buf = pluckCache[freq];
+  if (!buf) {
+    const sr = ac.sampleRate, n = Math.floor(sr * 1.6), N = Math.max(2, Math.round(sr / freq));
+    buf = ac.createBuffer(1, n, sr);
+    const d = buf.getChannelData(0), ring = new Float32Array(N);
+    for (let i = 0; i < N; i++) ring[i] = Math.random() * 2 - 1;
+    let idx = 0;
+    for (let i = 0; i < n; i++) { const nx = (idx + 1) % N; d[i] = ring[idx]; ring[idx] = 0.996 * 0.5 * (ring[idx] + ring[nx]); idx = nx; }
+    pluckCache[freq] = buf;
+  }
+  const s = ac.createBufferSource(); s.buffer = buf;
+  const g = ac.createGain(); g.gain.value = 0.55;
+  s.connect(g); g.connect(master); s.start(now);
+}
+const TIMBILA = [
+  { f: 261.63, k: 'a' }, { f: 293.66, k: 's' }, { f: 329.63, k: 'd' }, { f: 392.0, k: 'f' }, { f: 440.0, k: 'g' },
+  { f: 523.25, k: 'h' }, { f: 587.33, k: 'j' }, { f: 659.25, k: 'k' }, { f: 783.99, k: 'l' }, { f: 880.0, k: ';' }
+];
+const DRUMS = [
+  { n: 'Grave', k: 'z', kind: 'grave', bg: 'linear-gradient(#b5481a,#7a2a0a)', fg: '#fff', icon: '🥁' },
+  { n: 'Médio', k: 'x', kind: 'medio', bg: 'linear-gradient(#d28a2e,#8c5a14)', fg: '#fff', icon: '🥁' },
+  { n: 'Agudo', k: 'c', kind: 'agudo', bg: 'linear-gradient(#e9c46a,#a9822a)', fg: '#2b1d00', icon: '🥁' },
+  { n: 'Chocalho', k: 'v', kind: 'shaker', bg: 'linear-gradient(#2a9d8f,#16665c)', fg: '#fff', icon: '🎶' }
+];
+const STRINGS = [
+  { n: 'Ré 3', f: 146.83 }, { n: 'Sol 3', f: 196.0 }, { n: 'Si 3', f: 246.94 },
+  { n: 'Ré 4', f: 293.66 }, { n: 'Sol 4', f: 392.0 }, { n: 'Si 4', f: 493.88 }
+];
+$('#timbilaKeys').innerHTML = TIMBILA.map((n, i) => `<div class="tkey" role="button" tabindex="0" data-i="${i}" style="height:${100 - i * 6}%">${n.k.toUpperCase()}</div>`).join('');
+$('#drumPads').innerHTML = DRUMS.map((d, i) => `<div class="pad" role="button" tabindex="0" data-i="${i}" style="background:${d.bg};color:${d.fg}"><span class="text-2xl" aria-hidden="true">${d.icon}</span><span>${d.n}</span><span class="text-xs opacity-80">${d.k.toUpperCase()}</span></div>`).join('');
+$('#strings').innerHTML = STRINGS.map((s, i) => `<div class="str" role="button" tabindex="0" data-i="${i}">${s.n}</div>`).join('');
+function flash(el) { el.classList.remove('hit'); void el.offsetWidth; el.classList.add('hit'); setTimeout(() => el.classList.remove('hit'), 160); }
+function hitKey(i) { playTimbila(TIMBILA[i].f); flash($(`#timbilaKeys [data-i="${i}"]`)); }
+function hitPad(i) { const d = DRUMS[i]; if (d.kind === 'shaker') playShaker(); else playDrum(d.kind); flash($(`#drumPads [data-i="${i}"]`)); }
+function hitString(i) { playPluck(STRINGS[i].f); flash($(`#strings [data-i="${i}"]`)); }
+$('#timbilaKeys').addEventListener('pointerdown', e => { const k = e.target.closest('.tkey'); if (k) { e.preventDefault(); hitKey(+k.dataset.i); } });
+$('#drumPads').addEventListener('pointerdown', e => { const k = e.target.closest('.pad'); if (k) { e.preventDefault(); hitPad(+k.dataset.i); } });
+$('#strings').addEventListener('pointerdown', e => { const k = e.target.closest('.str'); if (k) { e.preventDefault(); hitString(+k.dataset.i); } });
+$('#strumBtn').addEventListener('click', () => { STRINGS.forEach((s, i) => setTimeout(() => hitString(i), i * 38)); });
+const KEYMAP = {};
+TIMBILA.forEach((n, i) => { KEYMAP[n.k] = () => hitKey(i); });
+DRUMS.forEach((d, i) => { KEYMAP[d.k] = () => hitPad(i); });
+document.addEventListener('keydown', e => {
+  if (!entered || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+  const t = e.target;
+  if (t && /INPUT|TEXTAREA|SELECT/.test(t.tagName) && t.type !== 'range') return;
+  const fn = KEYMAP[e.key.toLowerCase()]; if (!fn) return;
+  const r = $('#sons').getBoundingClientRect();
+  if (r.bottom < 0 || r.top > window.innerHeight) return;
+  fn();
+});
+
+/* ---------- Sequenciador ---------- */
+const SEQ_NOTES = [196.0, 246.94, 293.66, 392.0];
+const SEQ_EXAMPLE = ['x.....x.x.....x.', '..x...x...x...x.', 'x.x.x.x.x.x.x.x.', 'x..x..x.x..x..x.'];
+const SEQ_TRACKS = [
+  { n: 'Tambor grave', play: t => playDrum('grave', t) },
+  { n: 'Tambor agudo', play: t => playDrum('agudo', t) },
+  { n: 'Chocalho', play: t => playShaker(t) },
+  { n: 'Guitarra', play: (t, s) => playPluck(SEQ_NOTES[s % 4], t) }
+];
+let seqGrid = SEQ_EXAMPLE.map(p => p.split('').map(c => c === 'x'));
+const seq = { playing: false, step: 0, next: 0, timer: null };
+function buildSeq() {
+  $('#seqGrid').innerHTML = SEQ_TRACKS.map((tr, i) => `<div class="flex items-center gap-2"><span class="w-24 shrink-0 text-xs text-white/70">${tr.n}</span><div class="grid flex-1 gap-1" style="grid-template-columns:repeat(16,1fr)">${seqGrid[i].map((on, j) => `<button class="seq-step ${on ? 'on' : ''} ${j % 4 === 0 ? 'beat' : ''}" data-t="${i}" data-s="${j}" aria-label="${tr.n}, tempo ${j + 1}"></button>`).join('')}</div></div>`).join('');
+}
+buildSeq();
+$('#seqGrid').addEventListener('click', e => {
+  const b = e.target.closest('.seq-step'); if (!b) return;
+  const t = +b.dataset.t, s = +b.dataset.s;
+  seqGrid[t][s] = !seqGrid[t][s]; b.classList.toggle('on', seqGrid[t][s]);
+  if (seqGrid[t][s] && !seq.playing) { const ac = audio(); if (ac) SEQ_TRACKS[t].play(ac.currentTime, s); }
+});
+function seqHighlight(s) { $$('#seqGrid .seq-step').forEach(b => b.classList.toggle('cur', +b.dataset.s === s)); }
+function seqTick() {
+  const ac = audio(); if (!ac) return;
+  const bpm = parseInt($('#seqBpm').value);
+  while (seq.next < ac.currentTime + 0.12) {
+    const s = seq.step, at = seq.next;
+    SEQ_TRACKS.forEach((tr, i) => { if (seqGrid[i][s]) tr.play(at, s); });
+    setTimeout(() => { if (seq.playing) seqHighlight(s); }, Math.max(0, (at - ac.currentTime) * 1000));
+    seq.next += 60 / bpm / 4; seq.step = (s + 1) % 16;
+  }
+}
+function seqStop() { seq.playing = false; clearInterval(seq.timer); seqHighlight(-1); $('#seqPlay').textContent = '▶ Tocar'; }
+$('#seqPlay').addEventListener('click', () => {
+  if (seq.playing) return seqStop();
+  const ac = audio(); if (!ac) return;
+  seq.playing = true; seq.step = 0; seq.next = ac.currentTime + 0.06;
+  seq.timer = setInterval(seqTick, 25); seqTick();
+  $('#seqPlay').textContent = '■ Parar';
+});
+$('#seqBpm').addEventListener('input', () => { $('#seqBpmVal').textContent = $('#seqBpm').value; });
+$('#seqExample').addEventListener('click', () => { seqGrid = SEQ_EXAMPLE.map(p => p.split('').map(c => c === 'x')); buildSeq(); });
+$('#seqClear').addEventListener('click', () => { seqGrid = SEQ_EXAMPLE.map(p => p.split('').map(() => false)); buildSeq(); });
+
+/* ============================ JOGOS ============================ */
+function showGame(g) {
+  ['mem', 'flag', 'who'].forEach(k => $('#game-' + k).classList.toggle('hidden', k !== g));
+  $$('.game-tab').forEach(b => b.classList.toggle('active', b.dataset.g === g));
+}
+$$('.game-tab').forEach(b => b.addEventListener('click', () => showGame(b.dataset.g)));
+
+/* ---- Memória ---- */
+let mem = null, memTimer = null;
+function memBest() { try { return JSON.parse(localStorage.getItem('mz_membest') || '{}'); } catch (e) { return {}; } }
+function memStats() {
+  if (!mem) return;
+  const best = memBest()[mem.n];
+  $('#memStats').textContent = `Jogadas: ${mem.moves} · Tempo: ${mem.secs}s · Pares: ${mem.done}/${mem.n}` + (best ? ` · Recorde: ${best} jogadas` : '');
+}
+function memStart() {
+  clearInterval(memTimer);
+  const n = parseInt($('#memLevel').value);
+  const picks = shuffle(DISHES.filter(d => LOCAL[d.id])).slice(0, n);
+  const cards = shuffle(picks.flatMap(d => [{ id: d.id, t: 'img' }, { id: d.id, t: 'name' }]));
+  mem = { cards, open: [], done: 0, moves: 0, secs: 0, started: false, lock: false, n };
+  $('#memGrid').className = 'mt-3 grid gap-2 sm:gap-3 ' + (n >= 10 ? 'grid-cols-5' : 'grid-cols-4');
+  $('#memGrid').innerHTML = cards.map((c, i) => {
+    const d = dishById(c.id);
+    const front = c.t === 'img' ? `<img alt="${esc(d.name)}" src="${LOCAL[d.id]}">` : `<span>${d.name}</span>`;
+    return `<button class="mem-card" data-i="${i}" aria-label="Carta ${i + 1}"><span class="mem-inner"><span class="mem-back">🥥</span><span class="mem-front">${front}</span></span></button>`;
+  }).join('');
+  $('#memInfo').textContent = 'Toque numa carta para começar.';
+  memStats();
+}
+$('#memGrid').addEventListener('click', e => {
+  const b = e.target.closest('.mem-card'); if (!b || !mem || mem.lock) return;
+  if (b.classList.contains('open') || b.classList.contains('done')) return;
+  if (!mem.started) { mem.started = true; memTimer = setInterval(() => { mem.secs++; memStats(); }, 1000); }
+  b.classList.add('open'); mem.open.push(b);
+  if (mem.open.length < 2) return;
+  mem.moves++; mem.lock = true;
+  const [x, y] = mem.open, cx = mem.cards[+x.dataset.i], cy = mem.cards[+y.dataset.i];
+  if (cx.id === cy.id) {
+    x.classList.replace('open', 'done'); y.classList.replace('open', 'done');
+    mem.open = []; mem.lock = false; mem.done++;
+    const d = dishById(cx.id);
+    $('#memInfo').innerHTML = `<b>${d.name}:</b> ${d.short}`;
+    if (mem.done === mem.n) {
+      clearInterval(memTimer);
+      const bests = memBest(); const prev = bests[mem.n];
+      let rec = '';
+      if (!prev || mem.moves < prev) { bests[mem.n] = mem.moves; try { localStorage.setItem('mz_membest', JSON.stringify(bests)); } catch (er) {} rec = ' Novo recorde!'; }
+      $('#memInfo').innerHTML = `🎉 <b>Parabéns!</b> Você completou em ${mem.moves} jogadas e ${mem.secs} segundos.${rec}`;
+    }
+  } else {
+    setTimeout(() => { x.classList.remove('open'); y.classList.remove('open'); mem.open = []; mem.lock = false; }, 800);
+  }
+  memStats();
+});
+$('#memNew').addEventListener('click', memStart);
+$('#memLevel').addEventListener('change', memStart);
+
+/* ---- Bandeira ---- */
+const FCOL = { verde: '#007A3D', preto: '#111111', amarelo: '#FCD116', vermelho: '#D21034', branco: '#ffffff', azul: '#1E56D6' };
+const FANS = {
+  top: ['verde', 'Faixa de cima', 'as riquezas do solo e da agricultura'],
+  mid: ['preto', 'Faixa do meio', 'o continente africano'],
+  bot: ['amarelo', 'Faixa de baixo', 'as riquezas minerais do subsolo'],
+  tri: ['vermelho', 'Triângulo', 'a luta contra o colonialismo e a defesa da soberania'],
+  star: ['amarelo', 'Estrela', 'o espírito internacionalista e a solidariedade']
+};
+let fSel = null, fFill = {};
+$('#flagPalette').innerHTML = Object.keys(FCOL).map(c => `<div class="text-center"><button class="swatch" data-c="${c}" style="background:${FCOL[c]}" aria-label="${c}"></button><div class="text-xs mt-1 capitalize">${c}</div></div>`).join('');
+$('#flagPalette').addEventListener('click', e => {
+  const b = e.target.closest('.swatch'); if (!b) return;
+  fSel = b.dataset.c;
+  $$('#flagPalette .swatch').forEach(s => s.classList.toggle('sel', s === b));
+});
+$('#flagGame').addEventListener('click', e => {
+  const r = e.target.closest('[data-r]'); if (!r) return;
+  if (!fSel) { $('#flagResult').innerHTML = '<li class="text-mzr font-semibold">Escolha uma cor primeiro.</li>'; return; }
+  fFill[r.dataset.r] = fSel; r.setAttribute('fill', FCOL[fSel]);
+  r.setAttribute('stroke', '#888'); r.setAttribute('stroke-width', '1');
+  $('#flagResult').innerHTML = '';
+});
+$('#flagCheck').addEventListener('click', () => {
+  let ok = 0; const lines = [];
+  Object.keys(FANS).forEach(k => {
+    const el = $(`#flagGame [data-r="${k}"]`), [ans, nm, why] = FANS[k];
+    if (fFill[k] === ans) { ok++; el.setAttribute('stroke', '#007A3D'); el.setAttribute('stroke-width', '3'); lines.push(`<li>✅ <b>${nm}:</b> ${ans}, ${why}.</li>`); }
+    else { el.setAttribute('stroke', '#D21034'); el.setAttribute('stroke-width', '3'); lines.push(`<li>❌ <b>${nm}:</b> ${fFill[k] ? 'não é ' + fFill[k] : 'sem cor ainda'}. Tente de novo.</li>`); }
+  });
+  $('#flagResult').innerHTML = (ok === 5 ? '<li class="text-lg font-bold text-mzg">🎉 Bandeira completa!</li>' : `<li class="font-semibold">Você acertou ${ok} de 5.</li>`) + lines.join('');
+});
+$('#flagReset').addEventListener('click', () => {
+  fFill = {}; fSel = null;
+  $$('#flagGame [data-r]').forEach(r => { r.setAttribute('fill', '#cfcfcf'); r.setAttribute('stroke', '#888'); r.setAttribute('stroke-width', '1'); });
+  $$('#flagPalette .swatch').forEach(s => s.classList.remove('sel'));
+  $('#flagResult').innerHTML = '';
+});
+
+/* ---- Que prato sou eu? ---- */
+const CLUES = {
+  matapa: ['É feito com folhas.', 'Leva amendoim moído e leite de coco.', 'As folhas vêm de uma planta que os portugueses levaram da América do Sul.'],
+  frango: ['É uma ave assada na brasa.', 'A marinada leva limão, alho e piri-piri.', 'O nome vem de uma província do centro do país com muitos coqueirais.'],
+  camarao: ['É um prato de marisco.', 'O molho é cremoso, com tomate e caril.', 'O caril chegou pelo comércio no Índico, vindo da Índia.'],
+  mucapata: ['É um bolo fofo, mais doce que salgado.', 'Leva arroz fermentado e coco.', 'É associado ao norte do país e à herança swahili da costa.'],
+  xima: ['Acompanha quase tudo.', 'É uma papa firme.', 'É feita de farinha de milho e se come com as mãos.'],
+  polana: ['É um bolo.', 'Não leva farinha de trigo.', 'Leva batata e castanha de caju, e o nome vem de um bairro de Maputo.'],
+  badjias: ['É um petisco frito.', 'A massa é feita de feijão-frade.', 'Descende das bhajias indianas.'],
+  chamussas: ['Têm forma de triângulo.', 'São recheadas e fritas, crocantes.', 'É a versão moçambicana da samosa.'],
+  xiguinha: ['É um lanche crocante de mercado.', 'É feito de mandioca.', 'Leva "kakana" no nome, que é mandioca seca.'],
+  caldeirada: ['É um guisado.', 'Leva peixe e marisco com batata e tomate.', 'É uma herança da cozinha portuguesa com toque de piri-piri.']
+};
+let who = null;
+function whoRound() {
+  const id = who.ids[who.i];
+  const others = shuffle(Object.keys(CLUES).filter(k => k !== id)).slice(0, 3);
+  who.opts = shuffle([id, ...others]); who.clue = 1; who.answered = false;
+}
+function whoStart() { who = { ids: shuffle(Object.keys(CLUES)).slice(0, 8), i: 0, score: 0 }; whoRound(); whoRender(); }
+function whoRender() {
+  const box = $('#whoBox');
+  if (who.i >= who.ids.length) {
+    const msg = who.score >= 20 ? 'Chef de Moçambique!' : who.score >= 12 ? 'Você conhece bem a cozinha.' : 'Continue explorando as receitas!';
+    box.innerHTML = `<div class="text-center py-4"><p class="text-5xl">🏆</p><h4 class="text-3xl font-black mt-2">${who.score} de ${who.ids.length * 3} pontos</h4><p class="text-neutral-600 mt-1">${msg}</p><button id="whoAgain" class="mt-5 bg-mzr text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700">Jogar de novo</button></div>`;
+    $('#whoAgain').addEventListener('click', whoStart); return;
+  }
+  const id = who.ids[who.i], clues = CLUES[id];
+  box.innerHTML = `<div class="flex justify-between text-sm text-neutral-500"><span>Rodada ${who.i + 1} de ${who.ids.length}</span><span>Pontos: ${who.score}</span></div>
+    <ul class="mt-3 space-y-2">${clues.slice(0, who.clue).map((c, k) => `<li class="bg-neutral-50 rounded-xl px-4 py-2 text-sm"><b>Pista ${k + 1}:</b> ${c}</li>`).join('')}</ul>
+    <div class="grid sm:grid-cols-2 gap-2 mt-4" id="whoOpts">${who.opts.map(o => `<button class="opt-btn" data-o="${o}">${dishById(o).name}</button>`).join('')}</div>
+    <div class="mt-3 flex flex-wrap items-center gap-3">${who.clue < 3 ? `<button id="whoMore" class="border-2 border-neutral-300 px-4 py-2 rounded-full text-sm font-semibold hover:border-mzg">Mais uma pista (vale menos)</button>` : ''}<span class="text-sm text-neutral-500">Vale ${4 - who.clue} ponto${4 - who.clue > 1 ? 's' : ''}</span></div>
+    <div id="whoFeedback" class="mt-4"></div>`;
+  const more = $('#whoMore'); if (more) more.addEventListener('click', () => { who.clue++; whoRender(); });
+  $('#whoOpts').addEventListener('click', e => {
+    const b = e.target.closest('.opt-btn'); if (!b || who.answered) return;
+    who.answered = true;
+    const right = b.dataset.o === id;
+    if (right) who.score += 4 - who.clue;
+    $$('#whoOpts .opt-btn').forEach(x => { x.disabled = true; if (x.dataset.o === id) x.classList.add('ok'); else if (x === b) x.classList.add('bad'); });
+    const d = dishById(id);
+    $('#whoFeedback').innerHTML = `<div class="flex gap-4 items-center bg-neutral-50 rounded-2xl p-3"><img src="${LOCAL[id]}" alt="${esc(d.name)}" class="w-24 h-24 rounded-xl object-cover object-center"><div><p class="font-bold">${right ? '✅ Acertou! +' + (4 - who.clue) : '❌ Era: ' + d.name}</p><p class="text-sm text-neutral-600">${d.short}</p></div></div><button id="whoNext" class="mt-3 bg-mzg text-white px-5 py-2 rounded-full font-semibold hover:bg-emerald-800">${who.i + 1 < who.ids.length ? 'Próxima' : 'Ver resultado'}</button>`;
+    $('#whoNext').addEventListener('click', () => { who.i++; if (who.i < who.ids.length) whoRound(); whoRender(); });
+  });
+}
+
+/* ============================ QUIZ DE HISTÓRIA E GEOGRAFIA ============================ */
+const HQ = [
+  { cat: 'História · Era 1', q: 'Qual império controlava o comércio de ouro no planalto, antes da chegada dos portugueses?', a: 'Monomotapa', o: ['Império do Mali', 'Reino de Axum', 'Império Zulu'], x: 'O Império Monomotapa (Mwenemutapa) dominava o ouro e o marfim do planalto e comerciava com as cidades swahili da costa.' },
+  { cat: 'História · Era 2', q: 'Quem chegou à costa de Moçambique em 1498?', a: 'Vasco da Gama', o: ['Pedro Álvares Cabral', 'Bartolomeu Dias', 'Fernão de Magalhães'], x: 'Vasco da Gama chegou em 1498, na viagem marítima à Índia, e os portugueses passaram a se fixar na costa.' },
+  { cat: 'História · Era 2', q: 'O que foi o chibalo?', a: 'Um regime de trabalho forçado', o: ['Um prato típico de mandioca', 'Um partido político', 'Um tecido estampado'], x: 'O chibalo obrigava africanos a trabalhar para o Estado e para empresas coloniais, quase sem pagamento.' },
+  { cat: 'História · Era 3', q: 'Em que ano foi fundada a Frelimo?', a: '1962', o: ['1975', '1992', '1969'], x: 'A Frente de Libertação de Moçambique foi fundada em 1962, tendo Eduardo Mondlane como primeiro presidente.' },
+  { cat: 'História · Era 3', q: 'Em que ano começou a luta armada de libertação?', a: '1964', o: ['1962', '1969', '1975'], x: 'A luta armada começou em 25 de setembro de 1964, data lembrada hoje como feriado.' },
+  { cat: 'História · Era 3', q: 'Quem foi o primeiro presidente de Moçambique independente?', a: 'Samora Machel', o: ['Joaquim Chissano', 'Eduardo Mondlane', 'Armando Guebuza'], x: 'Samora Machel proclamou a independência em 25 de junho de 1975 e governou até 1986.' },
+  { cat: 'História · Era 4', q: 'Em que ano foi assinado o Acordo Geral de Paz, em Roma?', a: '1992', o: ['1986', '1989', '1994'], x: 'O acordo de 4 de outubro de 1992 pôs fim à guerra civil. As primeiras eleições multipartidárias foram em 1994.' },
+  { cat: 'História · Era 5', q: 'Quem tomou posse como presidente em janeiro de 2025?', a: 'Daniel Chapo', o: ['Filipe Nyusi', 'Armando Guebuza', 'Joaquim Chissano'], x: 'Daniel Chapo tomou posse em 15 de janeiro de 2025, como o quinto presidente e o primeiro nascido depois da independência.' },
+  { cat: 'Geografia', q: 'Qual província tem a cidade da Beira como capital?', a: 'Sofala', o: ['Gaza', 'Tete', 'Manica'], x: 'A Beira é a capital da província de Sofala, no centro do país, e tem um dos principais portos.' },
+  { cat: 'Geografia', q: 'Qual é a província mais populosa de Moçambique?', a: 'Nampula', o: ['Zambézia', 'Maputo Cidade', 'Niassa'], x: 'Nampula, no norte, é a província mais populosa, segundo o censo de 2017.' },
+  { cat: 'Geografia', q: 'Qual é o ponto mais alto de Moçambique?', a: 'Monte Binga', o: ['Monte Namuli', 'Kilimanjaro', 'Monte Mulanje'], x: 'O Monte Binga fica na província de Manica, na fronteira com o Zimbabwe.' },
+  { cat: 'Geografia', q: 'Qual ilha moçambicana é Património Mundial da UNESCO desde 1991?', a: 'Ilha de Moçambique', o: ['Ilha de Inhaca', 'Ilha de Ibo', 'Ilha de Benguerra'], x: 'A Ilha de Moçambique foi capital colonial e reúne fortalezas, mesquitas e igrejas. Fica na província de Nampula.' },
+  { cat: 'Bandeira', q: 'O que representa a cor amarela na bandeira?', a: 'As riquezas minerais do subsolo', o: ['A paz', 'O continente africano', 'A luta de libertação'], x: 'Verde: riquezas do solo. Preto: o continente africano. Amarelo: riquezas minerais. Branco: a paz. Vermelho: a luta contra o colonialismo.' },
+  { cat: 'Bandeira', q: 'Que instrumento de trabalho aparece na bandeira, ao lado do livro e da AK-47?', a: 'A enxada', o: ['O arado', 'A foice', 'O martelo'], x: 'A enxada representa a agricultura, o livro a educação e a AK-47 a defesa e a vigilância do país.' }
+];
+let hq = null;
+function hqStart() { hq = { i: 0, score: 0, wrong: [], order: shuffle(HQ.map((_, i) => i)), answered: false }; hqRender(); }
+function hqRender() {
+  const box = $('#histQuizBox');
+  if (hq.i >= hq.order.length) {
+    const s = hq.score, tot = HQ.length;
+    const lvl = s >= 13 ? ['🏅', 'Embaixador de Moçambique'] : s >= 10 ? ['🥇', 'Grande conhecedor'] : s >= 6 ? ['🧭', 'Explorador'] : ['🌱', 'Iniciante'];
+    box.innerHTML = `<div class="text-center"><p class="text-6xl">${lvl[0]}</p><h3 class="text-3xl font-black mt-2">${s} de ${tot}</h3><p class="text-mzg font-semibold">${lvl[1]}</p>
+      ${hq.wrong.length ? `<div class="text-left mt-6"><h4 class="font-bold mb-2">Para revisar:</h4><ul class="space-y-2 text-sm">${hq.wrong.map(w => `<li class="bg-neutral-50 rounded-xl p-3"><b>${w.q}</b><br><span class="text-mzg font-semibold">${w.a}</span> <span class="text-neutral-500">${w.x}</span></li>`).join('')}</ul></div>` : '<p class="mt-4 text-neutral-600">Acertou tudo! Impressionante.</p>'}
+      <div class="mt-6 flex flex-wrap justify-center gap-3"><button id="hqAgain" class="bg-mzr text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700">Jogar de novo</button><a href="#historia" class="border-2 border-neutral-300 px-6 py-3 rounded-full font-semibold hover:border-mzg">Rever a história</a></div></div>`;
+    $('#hqAgain').addEventListener('click', hqStart);
+    certUi(box.firstElementChild, s, tot, lvl[1]); return;
+  }
+  const q = HQ[hq.order[hq.i]];
+  const opts = shuffle([q.a, ...q.o]);
+  box.innerHTML = `<div class="flex justify-between text-sm text-neutral-500"><span>Pergunta ${hq.i + 1} de ${HQ.length}</span><span>${q.cat}</span></div>
+    <div class="h-2 bg-neutral-100 rounded-full mt-2 overflow-hidden"><div class="h-2 bg-mzg rounded-full transition-all" style="width:${(hq.i + 1) / HQ.length * 100}%"></div></div>
+    <h3 class="text-2xl font-bold mt-6">${q.q}</h3>
+    <div class="grid gap-2 mt-5" id="hqOpts">${opts.map((o, i) => `<button class="opt-btn hq-opt" data-v="${i}">${o}</button>`).join('')}</div>
+    <div id="hqFb" class="mt-4"></div>`;
+  hq.answered = false;
+  $('#hqOpts').addEventListener('click', e => {
+    const b = e.target.closest('.opt-btn'); if (!b || hq.answered) return;
+    hq.answered = true;
+    const right = opts[+b.dataset.v] === q.a;
+    if (right) hq.score++; else hq.wrong.push(q);
+    $$('#hqOpts .opt-btn').forEach((x, i) => { x.disabled = true; if (opts[i] === q.a) x.classList.add('ok'); else if (x === b) x.classList.add('bad'); });
+    $('#hqFb').innerHTML = `<p class="font-bold ${right ? 'text-mzg' : 'text-mzr'}">${right ? '✅ Correto!' : '❌ Não foi dessa vez.'}</p><p class="text-sm text-neutral-600 mt-1">${q.x}</p><button id="hqNext" class="mt-3 bg-mzk text-white px-5 py-2 rounded-full font-semibold hover:bg-mzr">${hq.i + 1 < HQ.length ? 'Próxima' : 'Ver resultado'}</button>`;
+    $('#hqNext').addEventListener('click', () => { hq.i++; hqRender(); });
+  });
+}
+
+/* ============================ LINHA DO TEMPO ============================ */
+const TL = [
+  { y:"Séc. X–XV", t:"Monomotapa e rotas swahili", c:"🏺", x:"No interior, o Império Monomotapa controlava ouro e marfim. Na costa, cidades como Sofala e a Ilha de Moçambique comerciavam com a Arábia, a Pérsia, a Índia e a China." },
+  { y:"1498", t:"Chegada de Vasco da Gama", c:"⛵", x:"Os navegadores portugueses chegam à costa e, com o tempo, fixam-se ali. Começa o período colonial." },
+  { y:"1898", t:"Capital em Lourenço Marques", c:"🏙️", x:"A capital colonial passa da Ilha de Moçambique para Lourenço Marques, hoje Maputo." },
+  { y:"1962", t:"Fundação da Frelimo", c:"✊", x:"A Frente de Libertação de Moçambique é fundada em Dar es Salaam, a 25 de junho de 1962." },
+  { y:"1964", t:"Início da luta armada", c:"🔥", x:"A 25 de setembro de 1964, militantes da Frelimo, liderados por Eduardo Mondlane, iniciam a luta armada contra o domínio português." },
+  { y:"1969", t:"Morte de Eduardo Mondlane", c:"🕯️", x:"Mondlane morre numa explosão na sede da Frelimo, em Dar es Salaam, a 3 de fevereiro de 1969." },
+  { y:"1974", t:"Acordos de Lusaca", c:"🤝", x:"Portugal e a Frelimo assinam os Acordos de Lusaca, a 7 de setembro de 1974, preparando a independência." },
+  { y:"1975", t:"Independência", c:"🇲🇿", x:"A 25 de junho de 1975, Samora Machel proclama a independência no Estádio da Machava." },
+  { y:"1977", t:"Começa a guerra civil", c:"⚠️", x:"O conflito entre a Frelimo e a Renamo devastou o país até 1992 e deixou centenas de milhares de mortos e milhões de deslocados." },
+  { y:"1986", t:"Morte de Samora Machel", c:"✈️", x:"O primeiro presidente morre num acidente aéreo em outubro de 1986. Joaquim Chissano assume a presidência." },
+  { y:"1991", t:"Ilha de Moçambique, Património Mundial", c:"🏛️", x:"A UNESCO inscreve a Ilha de Moçambique na lista do Património Mundial." },
+  { y:"1992", t:"Acordo Geral de Paz", c:"🕊️", x:"Assinado em Roma a 4 de outubro de 1992, encerra a guerra civil e abre caminho às eleições multipartidárias." },
+  { y:"1994", t:"Primeiras eleições multipartidárias", c:"🗳️", x:"O país realiza as primeiras eleições com vários partidos." },
+  { y:"2013", t:"Mia Couto recebe o Prémio Camões", c:"📚", x:"O escritor moçambicano é premiado com o mais importante prémio da literatura em língua portuguesa." },
+  { y:"2019", t:"Ciclone Idai", c:"🌀", x:"O ciclone atinge o centro do país, sobretudo a região da Beira, e deixa grande destruição." },
+  { y:"2021", t:"Paulina Chiziane recebe o Prémio Camões", c:"✍️", x:"A escritora é premiada, a terceira vez que o prémio foi para um autor moçambicano." },
+  { y:"2025", t:"Daniel Chapo toma posse", c:"🏛️", x:"A 15 de janeiro de 2025, Daniel Chapo assume a presidência, o primeiro chefe de Estado nascido depois da independência." }
+];
+let tlI = 0, tlTimer = null;
+function tlRender(scroll) {
+  const e = TL[tlI];
+  $('#tlYears').innerHTML = TL.map((v, i) => `<button role="tab" aria-selected="${i === tlI}" class="tl-y shrink-0 px-4 py-2 rounded-full border-2 font-bold text-sm ${i === tlI ? 'bg-mzr text-white border-mzr' : 'bg-white border-neutral-300 hover:border-mzg'}" data-i="${i}">${v.y}</button>`).join('');
+  $('#tlBar').style.width = ((tlI + 1) / TL.length * 100) + '%';
+  $('#tlCard').innerHTML = `<p class="text-6xl">${e.c}</p><p class="text-mzy font-black text-4xl mt-2">${e.y}</p><h3 class="text-2xl sm:text-3xl font-bold mt-1">${e.t}</h3><p class="text-white/85 mt-3 text-lg">${e.x}</p><p class="text-white/50 text-xs mt-4">${tlI + 1} de ${TL.length}</p>`;
+  if (scroll) { const b = $('.tl-y[data-i="' + tlI + '"]'); const box = $('#tlYears'); if (b) box.scrollLeft = b.offsetLeft - box.clientWidth / 2 + b.offsetWidth / 2; }
+}
+function tlStop() { if (tlTimer) { clearInterval(tlTimer); tlTimer = null; } $('#tlPlay').textContent = '▶ Reproduzir'; }
+function tlGo(i) { tlI = (i + TL.length) % TL.length; tlRender(true); }
+$('#tlYears').addEventListener('click', e => { const b = e.target.closest('.tl-y'); if (b) { tlStop(); tlGo(+b.dataset.i); } });
+$('#tlPrev').addEventListener('click', () => { tlStop(); tlGo(tlI - 1); });
+$('#tlNext').addEventListener('click', () => { tlStop(); tlGo(tlI + 1); });
+$('#tlPlay').addEventListener('click', () => { if (tlTimer) return tlStop(); $('#tlPlay').textContent = '⏸ Pausar'; if (tlI >= TL.length - 1) tlGo(0); tlTimer = setInterval(() => { if (tlI >= TL.length - 1) return tlStop(); tlGo(tlI + 1); }, 3500); });
+$('#linha').addEventListener('keydown', e => { if (e.key === 'ArrowRight') { tlStop(); tlGo(tlI + 1); } else if (e.key === 'ArrowLeft') { tlStop(); tlGo(tlI - 1); } });
+tlRender(false);
+
+/* ============================ IDIOMA ============================ */
+const LG = [
+  { c:'Saudações', pt:'Olá', ts:'Xewani / Avuxeni' },
+  { c:'Saudações', pt:'Bom dia', ts:'Avuxeni' },
+  { c:'Saudações', pt:'Boa tarde', ts:'Inhlikanhi' },
+  { c:'Saudações', pt:'Como está?', ts:'Kunjhani?' },
+  { c:'Saudações', pt:'Estou bem', ts:'Ndzi kona' },
+  { c:'Cortesia', pt:'Obrigado', ts:'Ndza nkhensa' },
+  { c:'Cortesia', pt:'Muito obrigado', ts:'Ndzi khense ngopfu' },
+  { c:'Cortesia', pt:'Por favor', ts:'Ndza kombela' },
+  { c:'Cortesia', pt:'Obrigado (forma muito usada no sul de Moçambique)', ts:'Kanimambo' },
+  { c:'Básico', pt:'Sim', ts:'Ina' },
+  { c:'Básico', pt:'Não', ts:'E-e' },
+  { c:'Básico', pt:'Eu gosto de você', ts:'Ndza ku rhandza' },
+  { c:'Despedidas', pt:'Adeus (para quem fica)', ts:'Sala kahle' },
+  { c:'Despedidas', pt:'Adeus (para quem vai embora)', ts:'Famba kahle' },
+  { c:'Apresentação', pt:'Qual é o seu nome?', ts:'Hi wena mani vito?' },
+  { c:'Apresentação', pt:'O meu nome é...', ts:'Hi mina ...' }
+];
+let lgCat = 'Todas', lgStudy = false;
+function lgRender() {
+  const cats = ['Todas', ...new Set(LG.map(x => x.c))];
+  $('#lgCats').innerHTML = cats.map(c => `<button class="lg-cat px-3 py-1.5 rounded-full border-2 text-sm font-semibold ${c === lgCat ? 'bg-mzy text-mzk border-mzy' : 'border-white/40 text-white hover:border-mzy'}" data-c="${c}">${c}</button>`).join('');
+  $('#lgStudy').textContent = '👁️ Modo estudo: ' + (lgStudy ? 'ligado' : 'desligado');
+  $('#lgGrid').innerHTML = LG.filter(x => lgCat === 'Todas' || x.c === lgCat).map(x => `<button class="lg-card text-left bg-white/10 border border-white/20 rounded-2xl p-4 hover:bg-white/20 transition" data-open="${lgStudy ? 0 : 1}">
+    <p class="text-xs text-white/60">${x.c}</p><p class="font-semibold mt-1">${x.pt}</p>
+    <p class="lg-ts text-mzy font-black text-xl mt-1 ${lgStudy ? 'blur-sm select-none' : ''}">${x.ts}</p></button>`).join('');
+}
+$('#lgCats').addEventListener('click', e => { const b = e.target.closest('.lg-cat'); if (b) { lgCat = b.dataset.c; lgRender(); } });
+$('#lgStudy').addEventListener('click', () => { lgStudy = !lgStudy; lgRender(); });
+$('#lgGrid').addEventListener('click', e => { const c = e.target.closest('.lg-card'); if (c) c.querySelector('.lg-ts').classList.toggle('blur-sm'); });
+lgRender();
+let lq = null;
+function lgQuizStart() { lq = { qs: shuffle(LG.filter(x => !x.pt.includes('...'))).slice(0, 5), i: 0, s: 0 }; lgQuizRender(); }
+function lgQuizRender() {
+  const box = $('#lgQuiz');
+  if (lq.i >= lq.qs.length) { box.innerHTML = `<p class="text-xl font-black">${lq.s} de ${lq.qs.length} 🎉</p><p class="text-sm text-neutral-600 mt-1">${lq.s >= 4 ? 'Muito bem! Kanimambo por jogar.' : 'Releia as frases acima e tente de novo.'}</p><button id="lgAgain" class="mt-3 bg-mzr text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700">Jogar de novo</button>`; $('#lgAgain').addEventListener('click', lgQuizStart); return; }
+  const q = lq.qs[lq.i];
+  const opts = shuffle([q, ...shuffle(LG.filter(x => x.ts !== q.ts)).slice(0, 3)]);
+  box.innerHTML = `<p class="text-xs text-neutral-500">Pergunta ${lq.i + 1} de ${lq.qs.length}</p><p class="font-bold text-lg mt-1">Como se diz “${q.pt}” em Xitsonga?</p>
+    <div class="grid gap-2 mt-3" id="lgOpts">${opts.map(o => `<button class="opt-btn" data-ts="${esc(o.ts)}">${o.ts}</button>`).join('')}</div><div id="lgFb" class="mt-3"></div>`;
+  $('#lgOpts').addEventListener('click', e => {
+    const b = e.target.closest('.opt-btn'); if (!b || b.disabled) return;
+    const ok = b.dataset.ts === q.ts; if (ok) lq.s++;
+    $$('#lgOpts .opt-btn').forEach(x => { x.disabled = true; if (x.dataset.ts === q.ts) x.classList.add('ok'); else if (x === b) x.classList.add('bad'); });
+    $('#lgFb').innerHTML = `<p class="font-bold ${ok ? 'text-mzg' : 'text-mzr'}">${ok ? '✅ Correto!' : '❌ Era: ' + esc(q.ts)}</p><button id="lgNext" class="mt-2 bg-mzk text-white px-4 py-2 rounded-full font-semibold hover:bg-mzr">${lq.i + 1 < lq.qs.length ? 'Próxima' : 'Ver resultado'}</button>`;
+    $('#lgNext').addEventListener('click', () => { lq.i++; lgQuizRender(); });
+  });
+}
+lgQuizStart();
+
+/* ============================ CARDÁPIO ============================ */
+const MN_COURSES = [
+  { k:'petisco', n:'🥟 Petisco', ids:['chamussas','badjias','xiguinha'] },
+  { k:'principal', n:'🍛 Prato principal', ids:['matapa','frango','camarao','caldeirada'] },
+  { k:'acomp', n:'🍚 Acompanhamento', ids:['xima','_none'] },
+  { k:'sobremesa', n:'🍰 Sobremesa', ids:['polana','mucapata'] }
+];
+const mn = { petisco:'chamussas', principal:'matapa', acomp:'xima', sobremesa:'polana', n:4 };
+try { const sv = JSON.parse(localStorage.getItem('mz_menu') || 'null'); if (sv) for (const c of MN_COURSES) if (c.ids.includes(sv[c.k])) mn[c.k] = sv[c.k]; if (sv && sv.n >= 1 && sv.n <= 12) mn.n = sv.n; } catch (e) {}
+function mnRender() {
+  try { localStorage.setItem('mz_menu', JSON.stringify(mn)); } catch (e) {}
+  $('#mnN').textContent = mn.n;
+  $('#mnPick').innerHTML = MN_COURSES.map(c => `<div><p class="font-bold text-sm">${c.n}</p><div class="flex flex-wrap gap-2 mt-1">${c.ids.map(id => `<button class="mn-opt game-tab px-3 py-1.5 rounded-full border-2 text-sm font-semibold ${mn[c.k] === id ? 'active' : ''}" data-k="${c.k}" data-id="${id}">${id === '_none' ? 'Sem acompanhamento' : dishById(id).name}</button>`).join('')}</div></div>`).join('');
+  const chosen = MN_COURSES.map(c => ({ c, id: mn[c.k] })).filter(x => x.id !== '_none');
+  $('#mnCard').innerHTML = `<p class="text-mzy font-semibold tracking-widest text-xs">CARDÁPIO PARA ${mn.n} ${mn.n === 1 ? 'PESSOA' : 'PESSOAS'}</p>
+    <h3 class="font-display text-3xl font-black mt-1">Banquete moçambicano</h3>
+    <ul class="mt-4 space-y-3">${chosen.map(x => { const d = dishById(x.id); return `<li class="border-l-4 border-mzy pl-3"><p class="text-xs text-white/60">${x.c.n}</p><p class="font-bold text-lg">${d.name}</p><p class="text-sm text-white/75">${d.short}</p><p class="text-xs text-white/50">${d.time} · ${d.level}</p><button class="mn-recipe underline text-mzy text-sm font-semibold" data-id="${d.id}">Ver receita</button></li>`; }).join('')}</ul>
+    <div class="mt-5 flex flex-wrap gap-2"><button id="mnCart" class="bg-mzg text-white px-4 py-2 rounded-full text-sm font-semibold hover:brightness-110">🛒 Adicionar tudo à lista de compras</button><button id="mnCopy" class="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-white/25">📋 Copiar cardápio</button></div>`;
+}
+$('#mnPick').addEventListener('click', e => { const b = e.target.closest('.mn-opt'); if (b) { mn[b.dataset.k] = b.dataset.id; mnRender(); } });
+$('#mnCard').addEventListener('click', async e => {
+  const r = e.target.closest('.mn-recipe'); if (r) return openModal(r.dataset.id);
+  if (e.target.closest('#mnCart')) { MN_COURSES.forEach(c => { if (mn[c.k] !== '_none') addToCart(mn[c.k], mn.n); }); openCart(); }
+  if (e.target.closest('#mnCopy')) {
+    const t = `Cardápio moçambicano para ${mn.n} pessoas\n` + MN_COURSES.filter(c => mn[c.k] !== '_none').map(c => `- ${c.n.replace(/^\S+\s/, '')}: ${dishById(mn[c.k]).name}`).join('\n');
+    try { await navigator.clipboard.writeText(t); } catch (er) { const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e2) {} ta.remove(); }
+    const b = $('#mnCopy'); b.textContent = '✅ Copiado!'; setTimeout(() => b.textContent = '📋 Copiar cardápio', 1800);
+  }
+});
+$('#mnDm').addEventListener('click', () => { mn.n = Math.max(1, mn.n - 1); mnRender(); });
+$('#mnDp').addEventListener('click', () => { mn.n = Math.min(12, mn.n + 1); mnRender(); });
+$('#mnRand').addEventListener('click', () => { MN_COURSES.forEach(c => { mn[c.k] = c.ids[Math.floor(Math.random() * c.ids.length)]; }); mnRender(); });
+mnRender();
+
+/* ============================ PERSONAGENS ============================ */
+const PG = [
+  { n:'Mia Couto', e:'📚', c:['Nasci na Beira, em 1955.', 'Sou biólogo e escritor.', 'Escrevi Terra Sonâmbula e inventei palavras novas em português.', 'Recebi o Prémio Camões em 2013.'] },
+  { n:'Samora Machel', e:'🎖️', c:['Liderei a Frelimo.', 'Fui o primeiro presidente do país independente.', 'Proclamei a independência a 25 de junho de 1975.', 'Morri num acidente aéreo em 1986.'] },
+  { n:'Eduardo Mondlane', e:'🎓', c:['Estudei no exterior e fui professor universitário.', 'Liderei a Frelimo desde a sua fundação.', 'A luta armada começou em 1964, sob a minha liderança.', 'Morri numa explosão em Dar es Salaam, em 1969.'] },
+  { n:'Paulina Chiziane', e:'✍️', c:['Sou escritora.', 'Fui a primeira mulher moçambicana a publicar um romance.', 'Escrevi Niketche: Uma História de Poligamia.', 'Recebi o Prémio Camões em 2021.'] },
+  { n:'José Craveirinha', e:'🪶', c:['Sou poeta.', 'Escrevi Xigubo.', 'A minha obra afirma a identidade africana.', 'Recebi o Prémio Camões em 1991.'] },
+  { n:'Eusébio', e:'⚽', c:['Nasci em Lourenço Marques, em 1942.', 'Fui jogador de futebol.', 'Joguei pelo Benfica e por Portugal.', 'Chamaram-me “Pantera Negra”.'] },
+  { n:'Lurdes Mutola', e:'🏅', c:['Nasci em Maputo.', 'Sou atleta.', 'Corro os 800 metros.', 'Ganhei o ouro olímpico em Sydney, em 2000.'] },
+  { n:'Daniel Chapo', e:'🏛️', c:['Sou uma figura política.', 'Nasci depois da independência.', 'Sou o quinto presidente do país.', 'Tomei posse a 15 de janeiro de 2025.'] }
+];
+let pg = null;
+function pgStart() { pg = { order: shuffle(PG.map((_, i) => i)).slice(0, 6), i: 0, s: 0, clue: 1, done: false }; pgRender(); }
+function pgRender() {
+  const box = $('#pgBox');
+  if (pg.i >= pg.order.length) { const max = pg.order.length * 4; box.innerHTML = `<div class="text-center"><p class="text-6xl">${pg.s >= max * 0.7 ? '🏆' : pg.s >= max * 0.4 ? '🥈' : '🌱'}</p><h3 class="text-3xl font-black mt-2">${pg.s} de ${max} pontos</h3><button id="pgAgain" class="mt-5 bg-mzr text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700">Jogar de novo</button></div>`; $('#pgAgain').addEventListener('click', pgStart); return; }
+  const p = PG[pg.order[pg.i]];
+  const opts = shuffle([p, ...shuffle(PG.filter(x => x.n !== p.n)).slice(0, 3)]);
+  box.innerHTML = `<div class="flex justify-between text-sm text-neutral-500"><span>Personagem ${pg.i + 1} de ${pg.order.length}</span><span>${pg.s} pts</span></div>
+    <ol class="mt-4 space-y-2">${p.c.slice(0, pg.clue).map((t, i) => `<li class="bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-2"><b>Pista ${i + 1}:</b> ${t}</li>`).join('')}</ol>
+    ${pg.clue < 4 && !pg.done ? '<button id="pgMore" class="mt-3 text-mzg underline font-semibold text-sm">Pedir outra pista (vale menos)</button>' : ''}
+    <div class="grid gap-2 mt-4" id="pgOpts">${opts.map(o => `<button class="opt-btn" data-n="${o.n}">${o.n}</button>`).join('')}</div><div id="pgFb" class="mt-4"></div>`;
+  const more = $('#pgMore'); if (more) more.addEventListener('click', () => { pg.clue++; pgRender(); });
+  $('#pgOpts').addEventListener('click', e => {
+    const b = e.target.closest('.opt-btn'); if (!b || pg.done) return;
+    pg.done = true; const ok = b.dataset.n === p.n; const pts = ok ? 5 - pg.clue : 0; pg.s += pts;
+    $$('#pgOpts .opt-btn').forEach(x => { x.disabled = true; if (x.dataset.n === p.n) x.classList.add('ok'); else if (x === b) x.classList.add('bad'); });
+    const mm = $('#pgMore'); if (mm) mm.remove();
+    $('#pgFb').innerHTML = `<p class="font-bold ${ok ? 'text-mzg' : 'text-mzr'}">${ok ? '✅ Correto! +' + pts + ' pts' : '❌ Era ' + p.n + '.'} ${p.e}</p><ul class="text-sm text-neutral-600 mt-2 list-disc pl-5">${p.c.map(t => `<li>${t}</li>`).join('')}</ul><button id="pgNext" class="mt-3 bg-mzk text-white px-5 py-2 rounded-full font-semibold hover:bg-mzr">${pg.i + 1 < pg.order.length ? 'Próxima' : 'Ver resultado'}</button>`;
+    $('#pgNext').addEventListener('click', () => { pg.i++; pg.clue = 1; pg.done = false; pgRender(); });
+  });
+}
+pgStart();
+
+/* ============================ NATUREZA ============================ */
+const NT = [
+  { id:'gorongosa', n:'Gorongosa', p:'Sofala', e:'🦁', g:'from-mzg to-lime-700', d:'Parque no centro do país. A guerra civil (1977–1992) acabou com grande parte dos animais, e um projeto de restauração, que ganhou força a partir de 2004, ajudou a recuperá-los.', a:['Leão','Elefante','Hipopótamo','Cão-selvagem-pintado'], f:'Cães-selvagens-pintados foram reintroduzidos (25 a 30) e hoje já passam de 200, segundo a administração do parque.' },
+  { id:'bazaruto', n:'Arquipélago de Bazaruto', p:'Inhambane', e:'🐬', g:'from-cyan-500 to-blue-700', d:'Cinco ilhas ao largo de Vilankulo, parque nacional marinho desde 1971, com dunas e recifes de coral.', a:['Dugongo','Tartaruga-marinha','Golfinho','Peixes de recife'], f:'É uma das últimas áreas da região onde ainda vivem dugongos.' },
+  { id:'niassa', n:'Reserva do Niassa', p:'Niassa', e:'🐘', g:'from-amber-600 to-orange-800', d:'Reserva no extremo norte, na província menos povoada do país, perto do Lago Niassa.', a:['Elefante','Leão','Cão-selvagem-pintado'], f:'Está entre as maiores áreas protegidas da África.' },
+  { id:'maputo', n:'Reserva Especial de Maputo', p:'Maputo Província', e:'🐘', g:'from-emerald-600 to-teal-800', d:'Reserva no sul, entre a baía e o Oceano Índico, conhecida pelos elefantes.', a:['Elefante','Tartaruga-marinha','Hipopótamo'], f:'A costa da reserva é usada por tartarugas-marinhas.' },
+  { id:'tofo', n:'Tofo e Inhambane', p:'Inhambane', e:'🦈', g:'from-sky-500 to-indigo-700', d:'Praias famosas pelo mergulho com animais marinhos de grande porte.', a:['Tubarão-baleia','Raia-manta','Baleia-jubarte'], f:'As baleias-jubarte costumam ser vistas entre julho e outubro.' },
+  { id:'quirimbas', n:'Ilhas Quirimbas', p:'Cabo Delgado', e:'🐢', g:'from-fuchsia-600 to-mzr', d:'Arquipélago ao norte, com a Ilha de Ibo, mangais e recifes de coral.', a:['Tartaruga-marinha','Peixes de recife','Golfinho'], f:'Corais e mangais protegem a costa e abrigam muitos peixes.' }
+];
+const NT_EMO = { 'Leão':'🦁','Elefante':'🐘','Hipopótamo':'🦛','Cão-selvagem-pintado':'🐕','Dugongo':'🐋','Tartaruga-marinha':'🐢','Golfinho':'🐬','Peixes de recife':'🐠','Tubarão-baleia':'🦈','Raia-manta':'🐟','Baleia-jubarte':'🐋' };
+let ntSel = 'gorongosa';
+function ntRender() {
+  $('#ntTabs').innerHTML = NT.map(a => `<button class="nt-tab game-tab px-4 py-2 rounded-full border-2 font-semibold text-sm ${a.id === ntSel ? 'active' : ''}" data-id="${a.id}">${a.e} ${a.n}</button>`).join('');
+  const a = NT.find(x => x.id === ntSel);
+  $('#ntCard').innerHTML = `<div class="bg-white rounded-3xl overflow-hidden border border-neutral-200 shadow"><div class="bg-gradient-to-br ${a.g} text-white p-6"><p class="text-5xl">${a.e}</p><h3 class="text-3xl font-black mt-2">${a.n}</h3><p class="text-white/85 text-sm">${a.p}</p></div>
+    <div class="p-6"><p>${a.d}</p><p class="mt-4 font-bold text-sm">Quem vive lá:</p><div class="flex flex-wrap gap-2 mt-2">${a.a.map(x => `<span class="bg-mzy/40 rounded-full px-3 py-1 text-sm font-semibold">${NT_EMO[x] || '🐾'} ${x}</span>`).join('')}</div>
+    <p class="mt-4 text-sm bg-neutral-50 border-l-4 border-mzg rounded-lg p-3">💡 ${a.f}</p></div></div>`;
+}
+$('#ntTabs').addEventListener('click', e => { const b = e.target.closest('.nt-tab'); if (b) { ntSel = b.dataset.id; ntRender(); } });
+const ntAll = [...new Set(NT.flatMap(a => a.a))];
+$('#ntAnimals').innerHTML = ntAll.map(x => `<button class="nt-an game-tab px-3 py-1.5 rounded-full border-2 font-semibold text-sm" data-a="${x}">${NT_EMO[x] || '🐾'} ${x}</button>`).join('');
+$('#ntAnimals').addEventListener('click', e => {
+  const b = e.target.closest('.nt-an'); if (!b) return;
+  $$('.nt-an').forEach(x => x.classList.toggle('active', x === b));
+  const where = NT.filter(a => a.a.includes(b.dataset.a));
+  $('#ntWhere').innerHTML = `<b>${b.dataset.a}</b> aparece em: ` + where.map(a => `<button class="nt-go underline text-mzg font-semibold" data-id="${a.id}">${a.n} (${a.p})</button>`).join(', ') + '.';
+});
+$('#ntWhere').addEventListener('click', e => { const g = e.target.closest('.nt-go'); if (g) { ntSel = g.dataset.id; ntRender(); $('#ntCard').scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
+ntRender();
+
+/* ============================ CERTIFICADO ============================ */
+function drawCert(name, score, total, level) {
+  const c = document.createElement('canvas'); c.width = 1400; c.height = 990;
+  const x = c.getContext('2d');
+  x.fillStyle = '#FFFBF0'; x.fillRect(0, 0, 1400, 990);
+  x.fillStyle = '#007A3D'; x.fillRect(0, 0, 1400, 36);
+  x.fillStyle = '#111'; x.fillRect(0, 36, 1400, 8);
+  x.fillStyle = '#FCD116'; x.fillRect(0, 44, 1400, 8);
+  x.fillStyle = '#D21034'; x.fillRect(0, 954, 1400, 36);
+  x.strokeStyle = '#FCD116'; x.lineWidth = 6; x.strokeRect(50, 90, 1300, 810);
+  x.textAlign = 'center'; x.fillStyle = '#111';
+  x.font = '700 30px Outfit, Arial, sans-serif'; x.fillText('MOÇAMBIQUE · DESAFIO DE HISTÓRIA E GEOGRAFIA', 700, 170);
+  x.font = '900 86px "Playfair Display", Georgia, serif'; x.fillText('Certificado', 700, 280);
+  x.font = '400 32px Outfit, Arial, sans-serif'; x.fillText('Este certificado é concedido a', 700, 360);
+  let size = 82; x.fillStyle = '#007A3D';
+  do { x.font = `900 ${size}px "Playfair Display", Georgia, serif`; size -= 4; } while (x.measureText(name).width > 1100 && size > 30);
+  x.fillText(name, 700, 470);
+  x.fillStyle = '#111'; x.fillRect(250, 495, 900, 3);
+  x.font = '400 32px Outfit, Arial, sans-serif';
+  x.fillText('por acertar', 700, 560);
+  x.fillStyle = '#D21034'; x.font = '900 120px "Playfair Display", Georgia, serif'; x.fillText(`${score} de ${total}`, 700, 690);
+  x.fillStyle = '#111'; x.font = '400 32px Outfit, Arial, sans-serif'; x.fillText('perguntas e conquistar o título de', 700, 750);
+  x.fillStyle = '#007A3D'; x.font = '700 52px Outfit, Arial, sans-serif'; x.fillText(level, 700, 825);
+  x.fillStyle = '#555'; x.font = '400 24px Outfit, Arial, sans-serif';
+  x.fillText(new Date().toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' }) + '  ·  Kanimambo!', 700, 875);
+  return c;
+}
+function certUi(box, score, total, level) {
+  const wrap = document.createElement('div');
+  wrap.className = 'mt-6 bg-neutral-50 border border-neutral-200 rounded-2xl p-4 text-left';
+  wrap.innerHTML = `<h4 class="font-bold">🎓 Certificado</h4>
+    <div class="flex flex-wrap gap-2 mt-2"><input id="certName" maxlength="40" placeholder="Seu nome" class="flex-1 min-w-[180px] border-2 border-neutral-300 rounded-full px-4 py-2"><button id="certGo" class="bg-mzg text-white px-5 py-2 rounded-full font-semibold hover:brightness-110">Gerar</button></div>
+    <div id="certOut" class="mt-3"></div>`;
+  box.appendChild(wrap);
+  $('#certGo').addEventListener('click', () => {
+    const name = $('#certName').value.trim();
+    if (!name) { $('#certName').focus(); return; }
+    const c = drawCert(name, score, total, level);
+    const url = c.toDataURL('image/png');
+    $('#certOut').innerHTML = `<img src="${url}" alt="Certificado de ${esc(name)}" class="w-full rounded-xl border border-neutral-300"><a id="certDl" href="${url}" download="certificado-mocambique.png" class="inline-block mt-3 bg-mzr text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700">⬇️ Baixar imagem</a><p class="text-xs text-neutral-500 mt-2">Se o download não abrir, toque e segure na imagem para salvar.</p>`;
+  });
+}
+
+/* ============================ MOÇAMBIQUE & BRASIL ============================ */
+const VS = [
+  ['Capital', 'Maputo', 'Brasília'],
+  ['Língua oficial', 'Português (e dezenas de línguas bantu)', 'Português (e línguas indígenas e de imigração)'],
+  ['Moeda', 'Metical (MZN)', 'Real (BRL)'],
+  ['Independência', '25 de junho de 1975', '7 de setembro de 1822'],
+  ['Área', 'cerca de 801 mil km²', 'cerca de 8,5 milhões de km²'],
+  ['População', 'cerca de 34 milhões', 'cerca de 213 milhões'],
+  ['Oceano', 'Índico', 'Atlântico'],
+  ['Base da comida', 'Xima (milho), arroz e mandioca', 'Arroz, feijão e farinha de mandioca'],
+  ['Fuso horário', 'UTC+2', 'UTC−3 (Brasília)'],
+  ['CPLP', 'Fundador, em 1996', 'Fundador, em 1996']
+];
+$('#vsBody').innerHTML = VS.map(r => `<tr class="border-t border-white/10"><td class="py-2 pr-2 text-white/60">${r[0]}</td><td class="py-2 pr-2">${r[1]}</td><td class="py-2">${r[2]}</td></tr>`).join('');
+const INGRED = [
+  ['🌿', 'Mandioca', 'Originária da América do Sul, chegou a África levada pelos portugueses a partir do século XVI. Hoje é base da alimentação moçambicana.'],
+  ['🥜', 'Amendoim', 'Também vem da América do Sul e foi espalhado por rotas coloniais. É essencial na matapa.'],
+  ['🌰', 'Caju', 'Nativo do Nordeste do Brasil, foi levado pelos portugueses para a África e a Índia. Tornou-se uma cultura importante em Moçambique.'],
+  ['🌽', 'Milho', 'De origem americana, foi introduzido na África e deu origem à xima.'],
+  ['🌶️', 'Piri-piri', 'As pimentas do gênero Capsicum vêm das Américas. O nome piri-piri vem do suaíli "pilipili", que quer dizer pimenta.'],
+  ['🥥', 'Coco', 'Chegou ao litoral africano pelo Índico e foi levado ao Brasil pelos portugueses. Marca os pratos do litoral nos dois países.']
+];
+$('#ingredGrid').innerHTML = INGRED.map(i => `<div class="bg-white/5 rounded-2xl p-4"><p class="text-2xl">${i[0]}</p><h4 class="font-bold mt-1">${i[1]}</h4><p class="text-sm text-white/70 mt-1">${i[2]}</p></div>`).join('');
+const COUSINS = [
+  { m: 'Matapa', b: 'Maniçoba', id: 'matapa', t: 'Folhas de mandioca cozidas por muito tempo. Nunca se comem cruas.',
+    comum: 'As duas receitas usam a folha da mandioca (a maniva), triturada ou pilada e cozida por muito tempo. Cruas, as folhas têm compostos tóxicos; o cozimento prolongado é o que as torna seguras.',
+    mz: 'Leva amendoim moído, leite de coco, alho e cebola, às vezes com camarão. É servida com arroz ou xima e leva cerca de uma hora e meia.',
+    br: 'Típica do Pará, é cozida tradicionalmente por vários dias, até uma semana, com carnes de porco e defumados. Acompanha arroz e farinha.',
+    hist: 'A mandioca é originária da América do Sul e foi levada a África pelos portugueses no século XVI. A mesma planta atravessou o Atlântico e virou prato nos dois lados.',
+    cur: 'No Pará, a maniçoba é famosa na época do Círio de Nazaré, em Belém.' },
+  { m: 'Badjias', b: 'Acarajé', id: 'badjias', t: 'Bolinhos fritos de feijão-fradinho. No Brasil, são fritos em azeite de dendê e recheados.',
+    comum: 'Os dois são bolinhos de massa de feijão-fradinho (o feijão-frade) com cebola, fritos e comidos quentes, como petisco ou lanche de rua.',
+    mz: 'A massa leva cominho, coentros e piri-piri e é frita em óleo. As badjias são servidas como petisco, com molho picante.',
+    br: 'É frito em azeite de dendê e aberto ao meio para ser recheado com vatapá, caruru, camarão seco e salada. É típico da Bahia.',
+    hist: 'As badjias descendem das bhajias da Índia, que chegaram pelo comércio no Índico. O acarajé vem da tradição africana ocidental, trazida ao Brasil pelo Atlântico. Duas rotas diferentes levaram a ideias parecidas.',
+    cur: 'O ofício das baianas de acarajé é Patrimônio Cultural do Brasil, desde 2005.' },
+  { m: 'Xima', b: 'Angu e pirão', id: 'xima', t: 'Papas de farinha para acompanhar molhos e ensopados.',
+    comum: 'Nos dois países, uma farinha cozida em água vira a base da refeição: uma massa que acompanha molhos, peixes e ensopados.',
+    mz: 'A xima é feita de farinha de milho branca e fica firme, a ponto de ser moldada. Come-se com as mãos, formando uma bolinha para apanhar o molho.',
+    br: 'O angu é feito de fubá de milho e fica mais mole. O pirão é feito com farinha de mandioca e caldo de peixe.',
+    hist: 'O milho é de origem americana. Na África austral, a papa de milho recebeu muitos nomes: sadza no Zimbabwe, nshima na Zâmbia e ugali no Quênia.',
+    cur: 'Em Moçambique, partilhar a xima no mesmo prato é um gesto de hospitalidade.' },
+  { m: 'Caril de camarão', b: 'Bobó de camarão', id: 'camarao', t: 'Camarão em molho cremoso. No Brasil, costuma levar purê de mandioca e dendê.',
+    comum: 'Camarão em molho cremoso, em muitas versões com leite de coco, servido com arroz. É um prato de litoral.',
+    mz: 'O molho leva tomate, cebola, gengibre e caril em pó, finalizado com coentros. Dura cerca de 40 minutos.',
+    br: 'O bobó leva purê de aipim (mandioca), leite de coco e azeite de dendê. É um prato tradicional da culinária baiana.',
+    hist: 'O caril chegou a Moçambique pelas rotas do Índico, vindo da Índia. O bobó nasce da mistura de ingredientes africanos, indígenas e portugueses na Bahia.',
+    cur: 'Em ambos, a regra é a mesma: o camarão entra no fim para não ficar duro.' },
+  { m: 'Chamussas', b: 'Pastel', id: 'chamussas', t: 'Massa fina recheada e frita, ótima para festas e lanches.',
+    comum: 'Massa fina recheada e frita até ficar crocante. Os dois são lanches de festa, de feira e de rua.',
+    mz: 'A chamussa tem forma de triângulo e é recheada com carne ou frango temperados com especiarias e piri-piri.',
+    br: 'O pastel é retangular e tem recheios como carne, queijo e palmito. É famoso nas feiras livres, acompanhado de caldo de cana.',
+    hist: 'A chamussa é a samosa, que viajou do Oriente Médio e da Índia pelas rotas do comércio marítimo. O pastel brasileiro costuma ser associado às feiras e à imigração asiática.',
+    cur: 'Ambos são ótimos para dividir: a regra é comer ainda quentes.' },
+  { m: 'Xiguinha de kakana', b: 'Mandioca frita', id: 'xiguinha', t: 'Mandioca em lascas ou palitos fritos, crocantes e salgados.',
+    comum: 'Mandioca frita em óleo quente, crocante por fora e com sal, comida como petisco.',
+    mz: 'Feita com lascas finas de mandioca ou de kakana, a mandioca seca ao sol, temperadas com sal e piri-piri. É um lanche de mercado.',
+    br: 'Aparece em palitos de aipim cozido e depois frito, muito comum em bares e restaurantes. A raiz tem vários nomes: mandioca, aipim e macaxeira.',
+    hist: 'Secar a mandioca é uma forma antiga de conservá-la. Em Moçambique ela vira kakana; no Brasil, farinha. Dois jeitos de guardar a mesma raiz.',
+    cur: 'A kakana se conserva por meses, o que a torna reserva de comida para a época de escassez.' },
+  { m: 'Caldeirada', b: 'Moqueca', id: 'caldeirada', t: 'Ensopados de peixe e marisco, com raízes na cozinha portuguesa e africana.',
+    comum: 'Guisados de peixe e marisco cozidos lentamente com legumes e ervas, servidos com arroz ou pão.',
+    mz: 'A caldeirada leva peixe, camarão, batata, tomate, pimento e louro, com um toque de piri-piri e azeite.',
+    br: 'A moqueca baiana leva dendê e leite de coco; a capixaba usa urucum, tomate e coentros, sem dendê nem coco. Ambas costumam ser feitas em panela de barro.',
+    hist: 'A caldeirada é herança da cozinha portuguesa, que a levou aos dois países. Em cada lugar foi mudando com os ingredientes locais.',
+    cur: 'Muita gente diz que o segredo é nunca mexer: só balançar a panela.' }
+];
+$('#cousinGrid').innerHTML = COUSINS.map((c, i) => `<div class="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col">
+  <div class="flex flex-wrap items-center gap-2 text-sm font-semibold"><span class="bg-mzg px-2 py-1 rounded-lg">🇲🇿 ${c.m}</span><span class="text-mzy">≈</span><span class="bg-mzy text-black px-2 py-1 rounded-lg">🇧🇷 ${c.b}</span></div>
+  <p class="text-sm text-white/75 mt-3">${c.t}</p>
+  <details class="mt-3 group">
+    <summary class="cursor-pointer text-mzy text-sm font-semibold select-none">Saber mais</summary>
+    <div class="mt-3 space-y-3 text-sm">
+      <div><p class="font-bold text-white">🤝 O que têm em comum</p><p class="text-white/75">${c.comum}</p></div>
+      <div class="grid sm:grid-cols-2 gap-3">
+        <div class="bg-mzg/20 rounded-xl p-3"><p class="font-bold">🇲🇿 ${c.m}</p><p class="text-white/80 mt-1">${c.mz}</p></div>
+        <div class="bg-mzy/15 rounded-xl p-3"><p class="font-bold">🇧🇷 ${c.b}</p><p class="text-white/80 mt-1">${c.br}</p></div>
+      </div>
+      <div><p class="font-bold text-white">📜 História</p><p class="text-white/75">${c.hist}</p></div>
+      <div><p class="font-bold text-white">💡 Curiosidade</p><p class="text-white/75">${c.cur}</p></div>
+      <button data-id="${c.id}" class="cousin-recipe bg-mzr hover:bg-red-700 text-white px-4 py-2 rounded-full font-semibold">Ver receita de ${c.m}</button>
+    </div>
+  </details></div>`).join('');
+$$('.cousin-recipe').forEach(b => b.addEventListener('click', () => openModal(b.dataset.id)));
+
+/* ============================ GLOSSÁRIO ============================ */
+const GLOS = [
+  { w: 'Xima', c: 'Comida', m: 'Papa firme de farinha de milho, base das refeições.', e: 'Hoje almoçamos xima com matapa.' },
+  { w: 'Matapa', c: 'Comida', m: 'Prato de folhas de mandioca piladas, com amendoim e leite de coco.', e: 'A matapa fica melhor com camarão.' },
+  { w: 'Piri-piri', c: 'Comida', m: 'Pimenta pequena e muito picante, e também o molho feito com ela.', e: 'Quer mais piri-piri no frango?' },
+  { w: 'Kakana', c: 'Comida', m: 'Mandioca seca ao sol, que se guarda por meses.', e: 'A kakana vira lanche crocante.' },
+  { w: 'Badjia', c: 'Comida', m: 'Bolinho frito de feijão-frade, vindo das bhajias indianas.', e: 'Duas badjias e um sumo, por favor.' },
+  { w: 'Chamussa', c: 'Comida', m: 'Triângulo crocante recheado, a versão moçambicana da samosa.', e: 'As chamussas saem quentes da panela.' },
+  { w: 'Caril', c: 'Comida', m: 'Molho de especiarias, de influência indiana, muito usado com marisco.', e: 'O caril de camarão leva leite de coco.' },
+  { w: 'Maheu', c: 'Comida', m: 'Bebida refrescante de farinha de milho, de sabor levemente azedo.', e: 'Num dia quente, um maheu gelado.' },
+  { w: 'Laurentina', c: 'Comida', m: 'Uma das cervejas mais conhecidas do país.', e: 'Uma Laurentina bem gelada.' },
+  { w: 'Capulana', c: 'Cultura', m: 'Pano de algodão estampado, usado como saia, lenço ou para carregar bebés.', e: 'Ela chegou de capulana nova.' },
+  { w: 'Marrabenta', c: 'Cultura', m: 'Ritmo urbano nascido em Maputo, com guitarras rápidas e dançantes.', e: 'Vamos dançar marrabenta!' },
+  { w: 'Timbila', c: 'Cultura', m: 'Xilofone de madeira do povo chope.', e: 'A orquestra de timbila abriu a festa.' },
+  { w: 'Lobolo', c: 'Cultura', m: 'Tradição do sul do país em que a família do noivo oferece bens à da noiva, como parte do casamento.', e: 'As famílias combinaram o lobolo.' },
+  { w: 'Chapa', c: 'Dia a dia', m: 'Minibus de transporte coletivo, muito usado nas cidades.', e: 'Apanhei um chapa para o centro.' },
+  { w: 'Machimbombo', c: 'Dia a dia', m: 'Autocarro, o ônibus em português de Moçambique.', e: 'O machimbombo está atrasado.' },
+  { w: 'Machamba', c: 'Dia a dia', m: 'Terreno de cultivo, a roça da família.', e: 'Fomos à machamba colher mandioca.' },
+  { w: 'Xitique', c: 'Dia a dia', m: 'Poupança em grupo: todos contribuem e, a cada vez, um dos membros recebe o total.', e: 'Este mês o xitique é meu.' },
+  { w: 'Madala', c: 'Dia a dia', m: 'Homem mais velho, tratamento de respeito.', e: 'Bom dia, madala!' },
+  { w: 'Maningue', c: 'Dia a dia', m: 'Muito. Expressão popular vinda de línguas locais.', e: 'Esta comida está maningue boa.' },
+  { w: 'Kanimambo', c: 'Frases', m: 'Obrigado, em xichangana e xirronga.', e: 'Kanimambo pela receita!' },
+  { w: 'Avuxeni', c: 'Frases', m: 'Bom dia, em xichangana.', e: 'Avuxeni, como está?' }
+];
+let glosCat = 'Todos';
+const GCATS = ['Todos', 'Comida', 'Cultura', 'Dia a dia', 'Frases'];
+function renderGlos() {
+  const q = norm($('#glosSearch').value.trim());
+  $('#glosCats').innerHTML = GCATS.map(c => `<button data-c="${c}" class="px-4 py-1.5 rounded-full text-sm font-medium border-2 transition ${c === glosCat ? 'bg-mzr border-mzr text-white' : 'bg-white border-neutral-200 hover:border-mzg'}">${c}</button>`).join('');
+  const list = GLOS.filter(g => (glosCat === 'Todos' || g.c === glosCat) && (!q || norm(g.w).includes(q) || norm(g.m).includes(q)));
+  $('#glosGrid').innerHTML = list.length ? list.map(g => `<div class="bg-white rounded-2xl p-5 shadow border-l-8 ${{ Comida: 'border-mzr', Cultura: 'border-mzy', 'Dia a dia': 'border-mzg', Frases: 'border-mzk' }[g.c]}"><div class="flex items-center justify-between gap-2"><h3 class="text-2xl font-bold">${g.w}</h3><span class="text-xs bg-neutral-100 rounded-full px-2 py-0.5">${g.c}</span></div><p class="text-sm mt-2">${g.m}</p><p class="text-sm text-neutral-500 italic mt-2">"${g.e}"</p></div>`).join('') : '<p class="col-span-full text-center text-neutral-500">Nenhuma palavra encontrada.</p>';
+}
+$('#glosCats').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { glosCat = b.dataset.c; renderGlos(); } });
+$('#glosSearch').addEventListener('input', renderGlos);
+
+/* ============================ DATAS ============================ */
+const HOLIDAYS = [
+  { m: 1, d: 1, n: 'Dia de Ano Novo', t: 'Início do ano civil.' },
+  { m: 2, d: 3, n: 'Dia dos Heróis Moçambicanos', t: 'Homenageia quem lutou pela libertação. A data lembra o assassinato de Eduardo Mondlane, líder da Frelimo, em 1969.' },
+  { m: 4, d: 7, n: 'Dia da Mulher Moçambicana', t: 'Homenageia a mulher moçambicana e a combatente Josina Machel, que morreu em 7 de abril de 1971.' },
+  { m: 5, d: 1, n: 'Dia do Trabalhador', t: 'Dia Internacional do Trabalhador.' },
+  { m: 6, d: 25, n: 'Dia da Independência Nacional', t: 'Em 25 de junho de 1975, Samora Machel proclamou a independência em Maputo.' },
+  { m: 9, d: 7, n: 'Dia da Vitória', t: 'Lembra os Acordos de Lusaka, assinados em 7 de setembro de 1974, que abriram caminho à independência.' },
+  { m: 9, d: 25, n: 'Dia das Forças Armadas de Libertação Nacional', t: 'Lembra o início da luta armada de libertação, em 25 de setembro de 1964.' },
+  { m: 10, d: 4, n: 'Dia da Paz e Reconciliação', t: 'Lembra o Acordo Geral de Paz, assinado em Roma em 4 de outubro de 1992.' },
+  { m: 12, d: 25, n: 'Dia da Família', t: 'Celebrado em 25 de dezembro, data do Natal.' }
+];
+function renderHol() {
+  const now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const items = HOLIDAYS.map(h => {
+    const thisYear = new Date(today.getFullYear(), h.m - 1, h.d);
+    let dt = thisYear; if (dt < today) dt = new Date(today.getFullYear() + 1, h.m - 1, h.d);
+    return { ...h, thisYear, dt, passed: thisYear < today, days: Math.round((dt - today) / 86400000) };
+  });
+  const next = items.reduce((a, b) => (b.days < a.days ? b : a));
+  const wd = dt => dt.toLocaleDateString('pt-BR', { weekday: 'long' });
+  $('#nextHol').innerHTML = next.days === 0
+    ? `<p class="text-mzy font-semibold tracking-widest text-sm">HOJE É FERIADO</p><h3 class="text-3xl font-black mt-1">${next.n}</h3><p class="text-white/70 mt-1">${next.t}</p>`
+    : `<p class="text-mzy font-semibold tracking-widest text-sm">PRÓXIMO FERIADO</p><h3 class="text-3xl font-black mt-1">${next.n}</h3><p class="text-white/80 mt-1">${next.d} de ${MONTHS[next.m - 1]} (${wd(next.dt)}) · em ${next.days} dia${next.days > 1 ? 's' : ''}</p><p class="text-white/60 text-sm mt-2 max-w-xl mx-auto">${next.t}</p>`;
+  $('#holGrid').innerHTML = items.slice().sort((a, b) => a.m - b.m || a.d - b.d).map(h => {
+    const isNext = h === next;
+    const status = h.days === 0 ? 'Hoje!' : h.passed ? 'Já passou este ano' : `Faltam ${h.days} dia${h.days > 1 ? 's' : ''}`;
+    return `<div class="bg-white rounded-2xl p-5 shadow flex gap-4 ${isNext ? 'ring-4 ring-mzr' : ''}">
+      <div class="shrink-0 w-16 text-center rounded-xl bg-mzk text-white py-2"><p class="text-3xl font-black leading-none">${h.d}</p><p class="text-xs uppercase tracking-wide text-mzy mt-1">${MONTHS[h.m - 1].slice(0, 3)}</p></div>
+      <div><h3 class="font-bold leading-tight">${h.n}</h3><p class="text-xs text-neutral-500 mt-1">${wd(h.thisYear)} em ${h.thisYear.getFullYear()} · ${status}</p><p class="text-sm mt-2">${h.t}</p></div></div>`;
+  }).join('');
+}
+
+/* ---- Inicialização dos novos recursos ---- */
+showGame('mem'); memStart(); whoStart(); hqStart(); renderGlos(); renderHol(); saveCart();
+
 /* ============================ INIT ============================ */
-renderFilters(); renderDishes(); renderQuiz();
+renderFilters(); renderDishes(); quizShuffle(); renderQuiz();
 </script>
 </body>
 </html>
